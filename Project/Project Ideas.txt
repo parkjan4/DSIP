@@ -1,0 +1,14 @@
+Idea #1: Doner Retention for Non-Profit Organizations
+
+Problem Statement:
+Can we predict whether or not a donor will unsubscribe (i.e. stop donating)?
+
+Motivation:
+This may seem like a trivial extension from customer retention problem in for-profit companies.
+However, it isn't if you realize that donor retention is just as important to non-profits as customer retention is to for-profits.
+In fact, one can argue that this is a more critical problem for non-profit organizations when you know that
+1) data science and machine learning technologies are generally seen much less in non-profit organizations, and
+2) vast majority of these organizations in fact rely on a small percentage of donors who give away big money;
+therefore, they have a much smaller pool of donors to compete for.
+
+Data source: ???
