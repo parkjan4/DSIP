@@ -1,233 +1,233 @@
-,state,zip,age,sex,maritaldesc,citizendesc,hispanic_latino,racedesc,pay_rate,employee_source,performance_score,tenure,return,mid_pay,rel_pay
-0,MA,1450.0,32.0,Female,Married,US Citizen,No,Black or African American,28.5,Diversity Job Fair,4,2804,319656.0,24.72,1.1529126213592233
-1,MA,1460.0,33.0,Male,Divorced,US Citizen,No,Black or African American,23.0,Website Banner Ads,4,907,83444.0,24.72,0.93042071197411
-2,MA,2703.0,31.0,Male,Single,US Citizen,No,White,29.0,Internet Search,4,641,74356.0,24.72,1.1731391585760518
-3,MA,2170.0,32.0,Female,Married,US Citizen,No,White,21.5,Pay Per Click - Google,0,501,32314.5,19.23,1.1180447217888716
-4,MA,2330.0,29.0,Female,Single,US Citizen,No,White,16.56,Website Banner Ads,0,427,21213.359999999997,19.23,0.861154446177847
-5,MA,1844.0,30.0,Female,Married,US Citizen,No,Asian,20.5,Diversity Job Fair,4,730,59860.0,19.23,1.066042641705668
-8,MA,2468.0,30.0,Female,Married,US Citizen,No,Asian,34.95,Diversity Job Fair,3,501,52529.850000000006,37.01,0.9443393677384492
-9,MA,2050.0,38.0,Female,Married,US Citizen,No,White,34.95,Other,4,2734,382213.2,37.01,0.9443393677384492
-12,MA,2026.0,31.0,Female,Single,US Citizen,Yes,White,43.0,Search Engine - Google Bing Yahoo,4,432,74304.0,32.84,1.3093788063337393
-13,MA,2127.0,46.0,Female,Single,US Citizen,No,White,48.5,Glassdoor,4,27,5238.0,32.84,1.476857490864799
-14,MA,1960.0,31.0,Male,Married,US Citizen,No,Black or African American,40.1,Employee Referral,0,6,721.8000000000001,32.84,1.2210718635809987
-15,MA,2493.0,33.0,Female,Single,US Citizen,No,White,34.0,Glassdoor,0,459,46818.0,32.84,1.0353227771010962
-16,MA,2301.0,31.0,Female,Married,US Citizen,No,Asian,40.0,Glassdoor,3,543,65160.0,32.84,1.2180267965895248
-17,TX,78230.0,29.0,Male,Divorced,US Citizen,No,Black or African American,35.5,Diversity Job Fair,6,599,127587.0,32.84,1.0809987819732032
-18,MA,2747.0,33.0,Male,Married,US Citizen,No,White,41.0,Employee Referral,4,517,84788.0,32.84,1.248477466504263
-19,MA,1886.0,33.0,Female,Married,US Citizen,No,Asian,42.75,Employee Referral,6,599,153643.5,32.84,1.3017661388550548
-20,MA,1886.0,36.0,Female,Married,US Citizen,No,White,39.55,Employee Referral,4,501,79258.2,32.84,1.2043239951278926
-21,MA,1810.0,31.0,Male,Married,US Citizen,No,White,42.2,Pay Per Click - Google,0,459,58109.4,32.84,1.2850182704019488
-22,MA,2452.0,30.0,Male,Divorced,US Citizen,No,Black or African American,45.0,Vendor Referral,3,299,40365.0,32.84,1.3702801461632155
-23,MA,2110.0,47.0,Male,Married,US Citizen,Yes,White,30.2,Employee Referral,3,543,49195.799999999996,32.84,0.9196102314250912
-24,MA,2148.0,38.0,Female,Single,US Citizen,No,White,31.4,Employee Referral,3,459,43237.799999999996,32.84,0.956151035322777
-34,MA,1886.0,30.0,Male,Divorced,US Citizen,No,White,45.0,Glassdoor,3,543,73305.0,32.14,1.4001244555071561
-35,MA,2135.0,28.0,Male,Married,US Citizen,Yes,White,42.0,Information Session,0,459,57834.0,32.14,1.3067828251400124
-36,MA,2119.0,29.0,Female,Married,US Citizen,No,White,37.0,Employee Referral,3,543,60273.0,32.14,1.1512134411947728
-37,MA,2472.0,36.0,Female,Separated,US Citizen,Yes,White,39.0,Employee Referral,4,543,84708.0,32.14,1.2134411947728687
-38,MA,2138.0,30.0,Male,Single,US Citizen,No,White,43.0,Vendor Referral,0,459,59211.0,32.14,1.3378967019290604
-39,MA,2048.0,38.0,Female,Married,US Citizen,No,White,27.0,Monster.com,4,501,54108.0,32.14,0.8400746733042938
-40,MA,1773.0,36.0,Female,Married,US Citizen,No,White,47.0,Vendor Referral,4,640,120320.0,32.14,1.462352209085252
-41,MA,1420.0,29.0,Male,Married,US Citizen,No,White,28.0,Monster.com,4,127,14224.0,32.14,0.8711885500933416
-42,MA,2343.0,48.0,Male,Married,Eligible NonCitizen,No,White,49.1,Employee Referral,0,459,67610.70000000001,32.14,1.5276913503422527
-43,MA,2148.0,42.0,Male,Married,US Citizen,No,White,62.0,Company Intranet - Partner,4,444,110112.0,55.77,1.1117088040164962
-44,MA,1886.0,31.0,Female,Single,US Citizen,No,Black or African American,61.3,Vendor Referral,0,1,183.89999999999998,55.77,1.0991572530034068
-45,CT,6033.0,53.0,Male,Single,US Citizen,No,Black or African American,58.2,Vendor Referral,4,732,170409.6,55.77,1.043571812802582
-46,MA,2703.0,44.0,Female,Single,US Citizen,Yes,White,58.5,Vendor Referral,3,309,54229.5,55.77,1.048951048951049
-47,CT,6033.0,66.0,Female,Married,US Citizen,No,White,54.1,Vendor Referral,4,599,129623.6,47.82,1.1313258051024677
-48,MA,2169.0,31.0,Male,Married,US Citizen,No,White,56.2,Employee Referral,4,599,134655.2,47.82,1.175240485152656
-49,MA,1545.0,34.0,Male,Married,US Citizen,No,Asian,53.8,On-campus Recruiting,0,1,161.39999999999998,47.82,1.125052279381012
-50,CT,6278.0,52.0,Male,Single,US Citizen,No,White,53.0,Employee Referral,3,599,95241.0,47.82,1.108322877457131
-51,MA,2453.0,39.0,Female,Widowed,US Citizen,No,Asian,55.2,Employee Referral,0,459,76010.40000000001,47.82,1.1543287327478042
-67,MA,1960.0,34.0,Male,Single,US Citizen,No,White,20.0,MBTA ads,5,1823,182300.0,19.23,1.0400416016640666
-68,MA,1886.0,29.0,Female,Married,US Citizen,No,White,21.0,Billboard,4,3098,260232.0,19.23,1.0920436817472698
-69,MA,2169.0,28.0,Female,Divorced,US Citizen,No,White,16.0,Word of Mouth,0,57,2736.0,19.23,0.8320332813312532
-70,MA,1844.0,40.0,Female,Single,US Citizen,No,White,23.0,MBTA ads,6,1635,225630.0,19.23,1.1960478419136764
-71,MA,2199.0,34.0,Male,Widowed,US Citizen,No,White,22.0,Employee Referral,0,1005,66330.0,19.23,1.1440457618304731
-72,MA,1902.0,47.0,Female,Single,US Citizen,No,Two or more races,22.0,Diversity Job Fair,4,2552,224576.0,19.23,1.1440457618304731
-73,MA,1902.0,44.0,Female,Married,US Citizen,Yes,Hispanic,17.0,Diversity Job Fair,0,2,102.0,19.23,0.8840353614144566
-74,MA,2062.0,43.0,Male,Married,US Citizen,Yes,Asian,22.0,Diversity Job Fair,3,170,11220.0,19.23,1.1440457618304731
-75,MA,1810.0,34.0,Male,Single,US Citizen,No,Two or more races,16.76,Social Networks - Facebook Twitter etc,4,1593,106794.72000000002,19.23,0.8715548621944879
-76,MA,2747.0,40.0,Male,Divorced,US Citizen,No,White,18.0,On-line Web application,4,194,13968.0,19.23,0.9360374414976599
-77,MA,1915.0,47.0,Female,Single,Eligible NonCitizen,No,White,22.0,Search Engine - Google Bing Yahoo,4,1915,168520.0,19.23,1.1440457618304731
-78,MA,2452.0,38.0,Male,Single,US Citizen,No,Asian,17.0,MBTA ads,4,1089,74052.0,19.23,0.8840353614144566
-79,MA,2072.0,47.0,Male,Single,US Citizen,Yes,White,16.0,Word of Mouth,4,1551,99264.0,19.23,0.8320332813312532
-80,MA,2027.0,59.0,Female,Divorced,US Citizen,No,Asian,22.0,Billboard,4,1047,92136.0,19.23,1.1440457618304731
-81,MA,2031.0,28.0,Female,Married,US Citizen,No,White,16.0,Professional Society,5,725,58000.0,19.23,0.8320332813312532
-82,MA,1701.0,27.0,Female,Married,US Citizen,No,White,20.0,Search Engine - Google Bing Yahoo,4,439,35120.0,19.23,1.0400416016640666
-83,MA,2043.0,48.0,Female,Separated,US Citizen,No,Black or African American,20.0,Diversity Job Fair,4,963,77040.0,19.23,1.0400416016640666
-84,MA,1701.0,34.0,Male,Widowed,US Citizen,No,Black or African American,20.0,MBTA ads,4,823,65840.0,19.23,1.0400416016640666
-85,MA,2763.0,67.0,Female,Single,US Citizen,No,White,16.0,Search Engine - Google Bing Yahoo,4,641,41024.0,19.23,0.8320332813312532
-86,MA,2170.0,38.0,Female,Single,US Citizen,No,White,19.5,Internet Search,4,781,60918.0,19.23,1.0140405616224648
-87,MA,1845.0,34.0,Male,Single,US Citizen,No,White,22.0,Newspager/Magazine,4,1089,95832.0,19.23,1.1440457618304731
-88,MA,1775.0,34.0,Female,Single,US Citizen,No,White,21.0,Other,3,1602,100926.0,19.23,1.0920436817472698
-89,MA,2044.0,29.0,Female,Single,Non-Citizen,No,Black or African American,22.0,Pay Per Click - Google,4,1733,152504.0,19.23,1.1440457618304731
-90,MA,2134.0,37.0,Male,Married,US Citizen,No,White,24.75,Employee Referral,5,-5,-618.75,19.23,1.2870514820592824
-91,MA,2452.0,40.0,Male,Single,US Citizen,No,White,15.0,Employee Referral,4,1089,65340.0,19.23,0.7800312012480499
-92,MA,1880.0,38.0,Male,Single,US Citizen,No,Black or African American,15.0,MBTA ads,2,440,13200.0,19.23,0.7800312012480499
-93,MA,2189.0,40.0,Female,Married,US Citizen,Yes,White,15.75,Billboard,3,543,25656.75,19.23,0.8190327613104524
-94,MA,1821.0,30.0,Female,Single,US Citizen,No,White,19.75,Newspager/Magazine,0,-5,-296.25,19.23,1.0270410816432658
-95,MA,2110.0,39.0,Female,Married,US Citizen,No,White,15.0,Billboard,4,1460,87600.0,19.23,0.7800312012480499
-96,MA,1810.0,40.0,Male,Married,US Citizen,No,White,23.5,Billboard,4,1484,139496.0,19.23,1.2220488819552782
-97,MA,2061.0,50.0,Male,Married,US Citizen,No,White,20.0,Professional Society,1,725,14500.0,19.23,1.0400416016640666
-98,MA,2180.0,35.0,Male,Single,US Citizen,No,White,21.0,Pay Per Click - Google,4,781,65604.0,19.23,1.0920436817472698
-99,MA,2351.0,39.0,Female,Married,US Citizen,No,Black or African American,22.0,Pay Per Click - Google,2,1271,55924.0,19.23,1.1440457618304731
-100,MA,2125.0,31.0,Female,Single,US Citizen,Yes,White,16.75,Monster.com,4,1551,103917.0,19.23,0.8710348413936557
-101,MA,2343.0,26.0,Female,Married,US Citizen,No,White,17.0,Search Engine - Google Bing Yahoo,4,794,53992.0,19.23,0.8840353614144566
-102,MA,2026.0,43.0,Male,Single,US Citizen,No,White,21.25,MBTA ads,4,599,50915.0,19.23,1.1050442017680706
-103,MA,2045.0,39.0,Male,Married,US Citizen,No,White,21.0,Employee Referral,3,823,51849.0,19.23,1.0920436817472698
-104,MA,2129.0,34.0,Male,Single,US Citizen,No,White,17.0,Word of Mouth,2,908,30872.0,19.23,0.8840353614144566
-105,MA,2458.0,28.0,Female,Single,US Citizen,No,White,18.0,Word of Mouth,0,8,432.0,19.23,0.9360374414976599
-106,MA,2176.0,62.0,Female,Married,US Citizen,No,White,20.0,Search Engine - Google Bing Yahoo,4,922,73760.0,19.23,1.0400416016640666
-107,MA,2132.0,28.0,Male,Married,US Citizen,No,White,18.0,Professional Society,0,417,22518.0,19.23,0.9360374414976599
-108,MA,2176.0,31.0,Female,Single,US Citizen,No,White,23.0,Newspager/Magazine,4,1593,146556.0,19.23,1.1960478419136764
-109,MA,2155.0,36.0,Female,Married,US Citizen,No,White,24.0,Social Networks - Facebook Twitter etc,4,1635,156960.0,19.23,1.24804992199688
-110,MA,1905.0,32.0,Male,Single,US Citizen,Yes,White,19.0,Employee Referral,0,459,26163.0,19.23,0.9880395215808632
-111,MA,1550.0,37.0,Male,Single,US Citizen,No,Asian,18.0,Professional Society,4,1089,78408.0,19.23,0.9360374414976599
-112,MA,2121.0,34.0,Female,Widowed,US Citizen,Yes,Black or African American,24.0,MBTA ads,4,1873,179808.0,19.23,1.24804992199688
-113,MA,2145.0,27.0,Female,Married,US Citizen,No,Black or African American,19.0,Professional Society,0,459,26163.0,19.23,0.9880395215808632
-114,MA,2330.0,47.0,Female,Divorced,US Citizen,No,White,22.0,Diversity Job Fair,0,8,528.0,19.23,1.1440457618304731
-115,MA,2062.0,43.0,Male,Married,US Citizen,No,Black or African American,15.0,Diversity Job Fair,2,1179,35370.0,19.23,0.7800312012480499
-116,MA,2451.0,37.0,Female,Single,US Citizen,Yes,Two or more races,16.0,Professional Society,5,641,51280.0,19.23,0.8320332813312532
-117,MA,2451.0,25.0,Female,Single,US Citizen,Yes,White,17.0,Glassdoor,4,963,65484.0,19.23,0.8840353614144566
-118,MA,2108.0,48.0,Male,Divorced,US Citizen,No,American Indian or Alaska Native,16.0,Diversity Job Fair,5,1817,145360.0,19.23,0.8320332813312532
-119,MA,2169.0,38.0,Male,Married,US Citizen,No,White,15.0,MBTA ads,4,1460,87600.0,19.23,0.7800312012480499
-120,MA,1864.0,43.0,Female,Married,US Citizen,No,Asian,24.0,On-campus Recruiting,4,1047,100512.0,19.23,1.24804992199688
-121,MA,2176.0,34.0,Female,Divorced,US Citizen,No,White,14.0,Monster.com,4,1055,59080.0,19.23,0.7280291211648465
-122,MA,2127.0,40.0,Female,Married,US Citizen,No,White,24.0,Word of Mouth,4,1677,160992.0,19.23,1.24804992199688
-123,MA,1776.0,35.0,Male,Married,US Citizen,No,Asian,21.0,Search Engine - Google Bing Yahoo,4,1509,126756.0,19.23,1.0920436817472698
-124,MA,2324.0,65.0,Female,Single,US Citizen,No,White,19.75,Monster.com,4,1436,113444.0,19.23,1.0270410816432658
-125,MA,1886.0,43.0,Female,Married,US Citizen,No,White,20.0,Monster.com,5,781,78100.0,19.23,1.0400416016640666
-126,MA,2149.0,34.0,Male,Single,US Citizen,No,White,19.0,Social Networks - Facebook Twitter etc,3,1418,80826.0,19.23,0.9880395215808632
-127,MA,1775.0,27.0,Female,Single,US Citizen,No,White,16.0,Professional Society,4,1047,67008.0,19.23,0.8320332813312532
-128,MA,2081.0,45.0,Female,Separated,US Citizen,No,White,20.0,Newspager/Magazine,4,1334,106720.0,19.23,1.0400416016640666
-129,MA,1778.0,51.0,Female,Divorced,US Citizen,No,White,21.0,Employee Referral,4,1005,84420.0,19.23,1.0920436817472698
-130,MA,2109.0,53.0,Female,Separated,US Citizen,No,White,19.0,On-campus Recruiting,4,907,68932.0,19.23,0.9880395215808632
-131,MA,2445.0,58.0,Male,Married,US Citizen,No,White,17.0,Monster.com,5,1635,138975.0,19.23,0.8840353614144566
-132,MA,2446.0,31.0,Female,Married,US Citizen,No,White,21.0,Monster.com,3,1908,120204.0,19.23,1.0920436817472698
-133,MA,1887.0,42.0,Male,Single,US Citizen,No,White,19.0,Billboard,4,1005,76380.0,19.23,0.9880395215808632
-134,MA,2170.0,44.0,Female,Married,US Citizen,No,White,22.0,Search Engine - Google Bing Yahoo,3,1347,88902.0,19.23,1.1440457618304731
-135,MA,2127.0,47.0,Female,Married,US Citizen,No,White,24.0,Search Engine - Google Bing Yahoo,4,105,10080.0,19.23,1.24804992199688
-136,MA,1721.0,40.0,Male,Single,US Citizen,No,Black or African American,14.0,On-campus Recruiting,4,865,48440.0,19.23,0.7280291211648465
-137,MA,1801.0,37.0,Male,Married,US Citizen,No,Asian,21.0,Pay Per Click - Google,4,1999,167916.0,19.23,1.0920436817472698
-138,MA,2048.0,31.0,Male,Married,US Citizen,No,White,17.0,Newspager/Magazine,4,1453,98804.0,19.23,0.8840353614144566
-139,MA,1810.0,39.0,Female,Single,US Citizen,No,Asian,19.0,Monster.com,4,693,52668.0,19.23,0.9880395215808632
-140,MA,2050.0,36.0,Male,Single,US Citizen,No,White,15.0,Social Networks - Facebook Twitter etc,3,164,7380.0,19.23,0.7800312012480499
-141,MA,1886.0,36.0,Female,Married,US Citizen,No,White,15.25,Internet Search,0,83,3797.25,19.23,0.7930317212688507
-142,MA,2122.0,42.0,Female,Married,US Citizen,No,Black or African American,20.0,Website Banner Ads,3,501,30060.0,19.23,1.0400416016640666
-143,MA,1844.0,44.0,Female,Single,US Citizen,Yes,Two or more races,19.0,Diversity Job Fair,5,1468,139460.0,19.23,0.9880395215808632
-144,MA,1938.0,45.0,Male,Widowed,US Citizen,No,White,15.0,Pay Per Click,0,2,90.0,19.23,0.7800312012480499
-145,MA,2189.0,31.0,Female,Single,US Citizen,No,White,17.0,Newspager/Magazine,4,907,61676.0,19.23,0.8840353614144566
-146,MA,2451.0,43.0,Female,Married,US Citizen,No,White,23.0,On-campus Recruiting,4,963,88596.0,19.23,1.1960478419136764
-147,MA,2330.0,40.0,Female,Married,US Citizen,No,White,20.0,Other,3,1858,111480.0,19.23,1.0400416016640666
-148,MA,2184.0,31.0,Female,Married,US Citizen,No,Black or African American,24.0,Monster.com,4,1271,122016.0,19.23,1.24804992199688
-149,MA,1760.0,49.0,Female,Single,US Citizen,No,Black or African American,14.0,Diversity Job Fair,4,1318,73808.0,19.23,0.7280291211648465
-150,MA,2346.0,41.0,Female,Single,US Citizen,No,White,20.0,Monster.com,0,459,27540.0,19.23,1.0400416016640666
-151,MA,2453.0,33.0,Female,Divorced,US Citizen,No,White,15.0,MBTA ads,4,1187,71220.0,19.23,0.7800312012480499
-152,MA,2110.0,28.0,Male,Single,US Citizen,No,Black or African American,18.0,Diversity Job Fair,4,921,66312.0,19.23,0.9360374414976599
-153,MA,2421.0,34.0,Male,Married,US Citizen,No,White,22.0,Employee Referral,4,1150,101200.0,19.23,1.1440457618304731
-154,MA,2136.0,40.0,Male,Married,US Citizen,No,White,21.0,On-campus Recruiting,4,781,65604.0,19.23,1.0920436817472698
-155,MA,1810.0,50.0,Female,Separated,US Citizen,No,Asian,15.0,Diversity Job Fair,5,1187,89025.0,19.23,0.7800312012480499
-156,MA,2132.0,33.0,Female,Single,US Citizen,No,White,19.0,Vendor Referral,4,1089,82764.0,19.23,0.9880395215808632
-157,MA,2152.0,37.0,Female,Widowed,US Citizen,No,Two or more races,18.5,Professional Society,1,762,14097.0,19.23,0.9620384815392615
-158,MA,2478.0,41.0,Male,Married,US Citizen,No,White,16.0,On-campus Recruiting,5,1005,80400.0,19.23,0.8320332813312532
-159,MA,1760.0,38.0,Male,Single,US Citizen,No,Black or African American,22.0,MBTA ads,2,865,38060.0,19.23,1.1440457618304731
-160,MA,2351.0,38.0,Female,Married,US Citizen,No,White,18.0,Social Networks - Facebook Twitter etc,4,1070,77040.0,19.23,0.9360374414976599
-161,MA,2458.0,29.0,Male,Single,US Citizen,No,Black or African American,24.0,Search Engine - Google Bing Yahoo,2,718,34464.0,19.23,1.24804992199688
-162,MA,2176.0,31.0,Female,Single,US Citizen,No,White,22.0,MBTA ads,4,1623,142824.0,19.23,1.1440457618304731
-163,MA,1749.0,44.0,Female,Married,US Citizen,No,White,17.0,Search Engine - Google Bing Yahoo,4,2258,153544.0,19.23,0.8840353614144566
-164,MA,2451.0,29.0,Male,Married,US Citizen,No,White,18.0,Search Engine - Google Bing Yahoo,4,514,37008.0,19.23,0.9360374414976599
-165,MA,2451.0,36.0,Male,Single,US Citizen,No,Black or African American,17.0,Search Engine - Google Bing Yahoo,4,3161,214948.0,19.23,0.8840353614144566
-166,MA,1742.0,33.0,Female,Divorced,Eligible NonCitizen,No,Asian,19.0,Social Networks - Facebook Twitter etc,0,19,1083.0,19.23,0.9880395215808632
-167,MA,2109.0,56.0,Male,Single,US Citizen,No,White,16.0,Employee Referral,4,907,58048.0,19.23,0.8320332813312532
-168,MA,2474.0,47.0,Female,Divorced,US Citizen,No,White,16.0,Billboard,4,267,17088.0,19.23,0.8320332813312532
-169,MA,2478.0,33.0,Male,Divorced,US Citizen,No,White,21.0,Pay Per Click - Google,4,194,16296.0,19.23,1.0920436817472698
-170,MA,2176.0,35.0,Male,Divorced,US Citizen,Yes,White,20.0,Professional Society,4,1705,136400.0,19.23,1.0400416016640666
-171,MA,2171.0,45.0,Female,Married,US Citizen,No,Asian,22.0,Search Engine - Google Bing Yahoo,5,1677,184470.0,19.23,1.1440457618304731
-172,MA,1420.0,44.0,Male,Married,US Citizen,No,Black or African American,24.0,Glassdoor,4,1842,176832.0,19.23,1.24804992199688
-173,MA,1460.0,33.0,Female,Married,US Citizen,No,White,16.0,Glassdoor,2,1954,62528.0,19.23,0.8320332813312532
-174,MA,1730.0,33.0,Male,Widowed,US Citizen,No,White,17.0,Employee Referral,6,1089,111078.0,19.23,0.8840353614144566
-175,MA,1886.0,43.0,Female,Separated,US Citizen,No,White,17.0,Website Banner Ads,4,907,61676.0,19.23,0.8840353614144566
-176,MA,2155.0,30.0,Male,Single,US Citizen,No,White,18.0,Search Engine - Google Bing Yahoo,4,497,35784.0,19.23,0.9360374414976599
-177,MA,1801.0,49.0,Female,Single,US Citizen,No,Black or African American,20.0,Diversity Job Fair,0,-3,-180.0,19.23,1.0400416016640666
-178,MA,2148.0,43.0,Male,Single,US Citizen,No,White,21.0,Word of Mouth,4,571,47964.0,19.23,1.0920436817472698
-179,MA,2154.0,29.0,Female,Married,US Citizen,No,Black or African American,21.0,On-campus Recruiting,4,641,53844.0,19.23,1.0920436817472698
-180,MA,2191.0,42.0,Female,Single,US Citizen,No,Asian,15.2,Search Engine - Google Bing Yahoo,4,1005,61104.0,19.23,0.7904316172646906
-181,MA,2149.0,32.0,Female,Married,US Citizen,No,White,15.0,Newspager/Magazine,4,1047,62820.0,19.23,0.7800312012480499
-182,MA,2130.0,53.0,Female,Single,US Citizen,No,White,24.5,Employee Referral,4,963,94374.0,19.23,1.2740509620384814
-183,MA,2093.0,49.0,Female,Married,US Citizen,No,White,16.0,Billboard,1,1593,25488.0,19.23,0.8320332813312532
-184,MA,2359.0,44.0,Female,Divorced,US Citizen,No,White,21.0,MBTA ads,5,777,81585.0,19.23,1.0920436817472698
-185,MA,2050.0,35.0,Female,Divorced,US Citizen,No,Two or more races,14.0,Word of Mouth,4,1999,111944.0,19.23,0.7280291211648465
-186,MA,2301.0,32.0,Male,Married,US Citizen,No,Asian,22.0,On-campus Recruiting,4,865,76120.0,19.23,1.1440457618304731
-187,MA,2747.0,35.0,Male,Married,US Citizen,Yes,White,19.0,Word of Mouth,3,543,30951.0,19.23,0.9880395215808632
-188,MA,2718.0,49.0,Female,Single,Eligible NonCitizen,No,Asian,14.0,Glassdoor,4,1509,84504.0,19.23,0.7280291211648465
-189,MA,1801.0,42.0,Female,Married,Non-Citizen,No,Two or more races,15.0,Diversity Job Fair,4,1435,86100.0,19.23,0.7800312012480499
-190,MA,2066.0,52.0,Female,Single,US Citizen,No,White,20.0,Billboard,0,62,3720.0,19.23,1.0400416016640666
-191,MA,1876.0,34.0,Female,Divorced,US Citizen,No,White,20.0,Social Networks - Facebook Twitter etc,3,124,7440.0,19.23,1.0400416016640666
-192,MA,2093.0,50.0,Female,Divorced,US Citizen,No,Black or African American,24.0,Billboard,4,1229,117984.0,19.23,1.24804992199688
-193,MA,2021.0,34.0,Female,Single,US Citizen,No,White,22.0,Professional Society,0,865,57090.0,19.23,1.1440457618304731
-194,MA,2171.0,30.0,Male,Divorced,US Citizen,No,White,19.0,Information Session,5,1271,120745.0,19.23,0.9880395215808632
-195,MA,2747.0,31.0,Female,Married,US Citizen,No,White,21.0,Social Networks - Facebook Twitter etc,5,1596,167580.0,19.23,1.0920436817472698
-196,MA,2124.0,32.0,Female,Single,US Citizen,No,White,20.0,Newspager/Magazine,0,362,21720.0,19.23,1.0400416016640666
-197,MA,1887.0,37.0,Female,Single,US Citizen,No,White,15.0,Monster.com,2,1114,33420.0,19.23,0.7800312012480499
-198,MA,2030.0,30.0,Male,Single,US Citizen,Yes,White,23.0,Newspager/Magazine,3,125,8625.0,19.23,1.1960478419136764
-199,MA,2324.0,52.0,Male,Married,Eligible NonCitizen,No,White,21.0,Website Banner Ads,4,1575,132300.0,19.23,1.0920436817472698
-200,MA,2109.0,48.0,Female,Single,US Citizen,Yes,Two or more races,16.0,Diversity Job Fair,4,1265,80960.0,19.23,0.8320332813312532
-201,MA,2458.0,35.0,Female,Single,US Citizen,No,Asian,22.0,Search Engine - Google Bing Yahoo,1,2583,56826.0,19.23,1.1440457618304731
-202,MA,1730.0,39.0,Female,Widowed,US Citizen,No,Asian,15.0,On-campus Recruiting,4,641,38460.0,19.23,0.7800312012480499
-203,MA,1810.0,29.0,Female,Married,US Citizen,No,White,29.0,Newspager/Magazine,3,447,38889.0,23.08,1.2564991334488735
-204,MA,2145.0,51.0,Female,Married,US Citizen,No,White,27.0,Employee Referral,5,-20,-2700.0,23.08,1.1698440207972272
-205,MA,2171.0,27.0,Female,Single,US Citizen,No,White,27.0,Monster.com,2,1915,103410.0,23.08,1.1698440207972272
-206,MA,2210.0,51.0,Female,Single,US Citizen,No,White,26.0,Search Engine - Google Bing Yahoo,3,1180,92040.0,23.08,1.1265164644714039
-207,MA,1013.0,34.0,Male,Single,US Citizen,No,White,22.0,Word of Mouth,4,641,56408.0,23.08,0.953206239168111
-208,MA,2148.0,37.0,Female,Single,US Citizen,No,Black or African American,25.0,Employee Referral,4,1579,157900.0,23.08,1.0831889081455808
-209,MA,1890.0,40.0,Male,Married,US Citizen,No,White,26.0,Careerbuilder,4,1915,199160.0,23.08,1.1265164644714039
-210,MA,1752.0,36.0,Female,Married,US Citizen,No,White,25.0,Word of Mouth,3,602,45150.0,23.08,1.0831889081455808
-211,MA,2169.0,39.0,Male,Married,US Citizen,No,White,26.0,Other,4,392,40768.0,23.08,1.1265164644714039
-212,MA,2458.0,38.0,Male,Single,Eligible NonCitizen,No,Two or more races,25.0,Newspager/Magazine,3,1698,127350.0,23.08,1.0831889081455808
-213,MA,2343.0,66.0,Female,Separated,US Citizen,No,Black or African American,29.0,Search Engine - Google Bing Yahoo,4,1675,194300.0,23.08,1.2564991334488735
-214,MA,2133.0,28.0,Female,Separated,US Citizen,No,White,24.0,Pay Per Click - Google,1,725,17400.0,23.08,1.0398613518197575
-215,MA,1824.0,39.0,Female,Married,US Citizen,No,Black or African American,27.0,Professional Society,4,725,78300.0,23.08,1.1698440207972272
-216,MA,2324.0,30.0,Female,Single,US Citizen,No,Black or African American,24.0,Newspager/Magazine,4,865,83040.0,23.08,1.0398613518197575
-217,MA,2143.0,36.0,Male,Single,US Citizen,Yes,White,29.0,Social Networks - Facebook Twitter etc,4,770,89320.0,23.08,1.2564991334488735
-218,MA,2170.0,34.0,Female,Married,US Citizen,No,White,24.0,Word of Mouth,4,280,26880.0,23.08,1.0398613518197575
-219,MA,2128.0,53.0,Male,Married,US Citizen,No,Black or African American,29.0,Diversity Job Fair,1,399,11571.0,23.08,1.2564991334488735
-220,MA,1886.0,31.0,Female,Married,US Citizen,No,White,24.25,Professional Society,4,781,75757.0,23.08,1.0506932409012133
-221,MA,1824.0,34.0,Female,Separated,US Citizen,No,American Indian or Alaska Native,27.0,Word of Mouth,4,1005,108540.0,23.08,1.1698440207972272
-222,MA,2155.0,29.0,Male,Single,US Citizen,Yes,White,24.0,Newspager/Magazine,4,963,92448.0,23.08,1.0398613518197575
-223,MA,2021.0,45.0,Female,Single,US Citizen,No,White,24.0,Monster.com,4,770,73920.0,23.08,1.0398613518197575
-224,MA,2445.0,33.0,Female,Married,Non-Citizen,No,White,28.0,Glassdoor,4,236,26432.0,23.08,1.2131715771230505
-225,MA,2021.0,33.0,Female,Single,US Citizen,No,White,25.0,Vendor Referral,0,25,1875.0,23.08,1.0831889081455808
-226,MA,2351.0,25.0,Female,Separated,US Citizen,No,White,28.0,Other,0,392,32928.0,23.08,1.2131715771230505
-227,MA,1742.0,41.0,Female,Divorced,US Citizen,No,White,23.0,Search Engine - Google Bing Yahoo,4,770,70840.0,23.08,0.9965337954939342
-228,MA,1821.0,31.0,Female,Divorced,US Citizen,No,American Indian or Alaska Native,22.5,MBTA ads,5,1823,205087.5,23.08,0.9748700173310226
-229,MA,2128.0,48.0,Female,Single,US Citizen,No,White,25.0,Professional Society,6,725,108750.0,23.08,1.0831889081455808
-230,MA,2090.0,38.0,Female,Divorced,US Citizen,No,Asian,22.0,Glassdoor,4,448,39424.0,23.08,0.953206239168111
-231,MA,2126.0,33.0,Male,Married,US Citizen,No,White,28.0,Word of Mouth,4,378,42336.0,23.08,1.2131715771230505
-232,MA,1770.0,38.0,Male,Married,US Citizen,No,White,22.0,Information Session,4,1089,95832.0,23.08,0.953206239168111
-233,MA,2122.0,41.0,Female,Widowed,US Citizen,No,White,24.0,On-campus Recruiting,0,69,4968.0,23.08,1.0398613518197575
-234,MA,2324.0,35.0,Female,Single,US Citizen,No,Black or African American,26.1,Glassdoor,5,1047,136633.5,23.08,1.1308492201039864
-235,MA,2324.0,41.0,Female,Married,US Citizen,No,White,23.0,Vendor Referral,0,51,3519.0,23.08,0.9965337954939342
-236,MA,2176.0,31.0,Female,Married,US Citizen,No,Two or more races,23.0,Newspager/Magazine,0,45,3105.0,23.08,0.9965337954939342
-237,MA,2149.0,30.0,Female,Single,US Citizen,No,White,26.0,Newspager/Magazine,0,459,35802.0,23.08,1.1265164644714039
-238,MA,2472.0,32.0,Male,Single,US Citizen,No,White,25.0,MBTA ads,1,1116,27900.0,23.08,1.0831889081455808
-239,MA,1450.0,25.0,Male,Married,US Citizen,No,White,27.0,Professional Society,4,1698,183384.0,23.08,1.1698440207972272
-240,MA,2126.0,47.0,Female,Single,US Citizen,No,Black or African American,25.0,Billboard,6,1145,171750.0,23.08,1.0831889081455808
-241,MA,2127.0,41.0,Male,Single,US Citizen,No,Hispanic,26.0,Diversity Job Fair,4,1635,170040.0,23.08,1.1265164644714039
-242,MA,1460.0,43.0,Male,Separated,US Citizen,No,Black or African American,29.0,On-campus Recruiting,4,1145,132820.0,23.08,1.2564991334488735
-243,MA,1040.0,32.0,Female,Single,US Citizen,No,White,26.39,Glassdoor,4,599,63230.44,23.08,1.1434142114384749
-244,MA,2492.0,65.0,Female,Married,US Citizen,No,Asian,25.0,Newspager/Magazine,3,462,34650.0,23.08,1.0831889081455808
-245,MA,2472.0,28.0,Female,Married,US Citizen,No,Asian,28.0,Monster.com,0,72,6048.0,23.08,1.2131715771230505
-246,MA,1886.0,31.0,Female,Married,US Citizen,No,White,29.0,Pay Per Click - Google,5,264,38280.0,23.08,1.2564991334488735
-247,MA,2050.0,38.0,Female,Married,Eligible NonCitizen,No,Asian,26.0,MBTA ads,4,1551,161304.0,23.08,1.1265164644714039
-248,MA,1902.0,36.0,Female,Divorced,Eligible NonCitizen,No,White,26.0,Search Engine - Google Bing Yahoo,0,26,2028.0,23.08,1.1265164644714039
-249,MA,2138.0,45.0,Male,Married,US Citizen,No,White,22.0,Glassdoor,4,218,19184.0,23.08,0.953206239168111
-250,MA,2062.0,31.0,Male,Married,US Citizen,No,White,29.0,Monster.com,4,2132,247312.0,23.08,1.2564991334488735
-251,MA,1851.0,30.0,Female,Single,US Citizen,No,White,23.0,Monster.com,4,1990,183080.0,23.08,0.9965337954939342
-252,MA,2045.0,54.0,Male,Single,US Citizen,No,White,22.0,Pay Per Click - Google,5,641,70510.0,23.08,0.953206239168111
-253,MA,2129.0,64.0,Female,Married,US Citizen,No,White,28.75,Search Engine - Google Bing Yahoo,4,419,48185.0,23.08,1.2456672443674177
-254,MA,2472.0,42.0,Male,Widowed,US Citizen,No,White,23.0,Pay Per Click - Google,4,1162,106904.0,23.08,0.9965337954939342
-255,MA,1778.0,32.0,Female,Single,US Citizen,No,White,22.0,Vendor Referral,4,539,47432.0,23.08,0.953206239168111
-256,MA,2459.0,41.0,Male,Single,US Citizen,No,Black or African American,22.0,Employee Referral,4,683,60104.0,23.08,0.953206239168111
-257,MA,2045.0,59.0,Male,Single,US Citizen,No,White,29.0,Professional Society,5,1140,165300.0,23.08,1.2564991334488735
-258,MA,2302.0,32.0,Female,Single,US Citizen,No,White,22.0,Newspager/Magazine,4,641,56408.0,23.08,0.953206239168111
-259,MA,1810.0,32.0,Male,Single,US Citizen,No,White,24.25,Vendor Referral,4,725,70325.0,23.08,1.0506932409012133
+,state,zip,age,sex,maritaldesc,citizendesc,hispanic_latino,racedesc,pay_rate,employee_source,performance_score,tenure,return,rel_pay
+0,MA,1450.0,32.0,Female,Married,US Citizen,No,Black or African American,28.5,Diversity Job Fair,4,2804,319656.0,1.1529126213592233
+1,MA,1460.0,33.0,Male,Divorced,US Citizen,No,Black or African American,23.0,Website Banner Ads,4,907,83444.0,0.93042071197411
+2,MA,2703.0,31.0,Male,Single,US Citizen,No,White,29.0,Internet Search,4,641,74356.0,1.1731391585760518
+3,MA,2170.0,32.0,Female,Married,US Citizen,No,White,21.5,Pay Per Click - Google,0,501,32314.5,1.1180447217888716
+4,MA,2330.0,29.0,Female,Single,US Citizen,No,White,16.56,Website Banner Ads,0,427,21213.359999999997,0.861154446177847
+5,MA,1844.0,30.0,Female,Married,US Citizen,No,Asian,20.5,Diversity Job Fair,4,730,59860.0,1.066042641705668
+8,MA,2468.0,30.0,Female,Married,US Citizen,No,Asian,34.95,Diversity Job Fair,3,501,52529.850000000006,0.9443393677384492
+9,MA,2050.0,38.0,Female,Married,US Citizen,No,White,34.95,Other,4,2734,382213.2,0.9443393677384492
+12,MA,2026.0,31.0,Female,Single,US Citizen,Yes,White,43.0,Search Engine - Google Bing Yahoo,4,432,74304.0,1.3093788063337393
+13,MA,2127.0,46.0,Female,Single,US Citizen,No,White,48.5,Glassdoor,4,27,5238.0,1.476857490864799
+14,MA,1960.0,31.0,Male,Married,US Citizen,No,Black or African American,40.1,Employee Referral,0,6,721.8000000000001,1.2210718635809987
+15,MA,2493.0,33.0,Female,Single,US Citizen,No,White,34.0,Glassdoor,0,459,46818.0,1.0353227771010962
+16,MA,2301.0,31.0,Female,Married,US Citizen,No,Asian,40.0,Glassdoor,3,543,65160.0,1.2180267965895248
+17,TX,78230.0,29.0,Male,Divorced,US Citizen,No,Black or African American,35.5,Diversity Job Fair,6,599,127587.0,1.0809987819732032
+18,MA,2747.0,33.0,Male,Married,US Citizen,No,White,41.0,Employee Referral,4,517,84788.0,1.248477466504263
+19,MA,1886.0,33.0,Female,Married,US Citizen,No,Asian,42.75,Employee Referral,6,599,153643.5,1.3017661388550548
+20,MA,1886.0,36.0,Female,Married,US Citizen,No,White,39.55,Employee Referral,4,501,79258.2,1.2043239951278926
+21,MA,1810.0,31.0,Male,Married,US Citizen,No,White,42.2,Pay Per Click - Google,0,459,58109.4,1.2850182704019488
+22,MA,2452.0,30.0,Male,Divorced,US Citizen,No,Black or African American,45.0,Vendor Referral,3,299,40365.0,1.3702801461632155
+23,MA,2110.0,47.0,Male,Married,US Citizen,Yes,White,30.2,Employee Referral,3,543,49195.799999999996,0.9196102314250912
+24,MA,2148.0,38.0,Female,Single,US Citizen,No,White,31.4,Employee Referral,3,459,43237.799999999996,0.956151035322777
+34,MA,1886.0,30.0,Male,Divorced,US Citizen,No,White,45.0,Glassdoor,3,543,73305.0,1.4001244555071561
+35,MA,2135.0,28.0,Male,Married,US Citizen,Yes,White,42.0,Information Session,0,459,57834.0,1.3067828251400124
+36,MA,2119.0,29.0,Female,Married,US Citizen,No,White,37.0,Employee Referral,3,543,60273.0,1.1512134411947728
+37,MA,2472.0,36.0,Female,Separated,US Citizen,Yes,White,39.0,Employee Referral,4,543,84708.0,1.2134411947728687
+38,MA,2138.0,30.0,Male,Single,US Citizen,No,White,43.0,Vendor Referral,0,459,59211.0,1.3378967019290604
+39,MA,2048.0,38.0,Female,Married,US Citizen,No,White,27.0,Monster.com,4,501,54108.0,0.8400746733042938
+40,MA,1773.0,36.0,Female,Married,US Citizen,No,White,47.0,Vendor Referral,4,640,120320.0,1.462352209085252
+41,MA,1420.0,29.0,Male,Married,US Citizen,No,White,28.0,Monster.com,4,127,14224.0,0.8711885500933416
+42,MA,2343.0,48.0,Male,Married,Eligible NonCitizen,No,White,49.1,Employee Referral,0,459,67610.70000000001,1.5276913503422527
+43,MA,2148.0,42.0,Male,Married,US Citizen,No,White,62.0,Company Intranet - Partner,4,444,110112.0,1.1117088040164962
+44,MA,1886.0,31.0,Female,Single,US Citizen,No,Black or African American,61.3,Vendor Referral,0,1,183.89999999999998,1.0991572530034068
+45,CT,6033.0,53.0,Male,Single,US Citizen,No,Black or African American,58.2,Vendor Referral,4,732,170409.6,1.043571812802582
+46,MA,2703.0,44.0,Female,Single,US Citizen,Yes,White,58.5,Vendor Referral,3,309,54229.5,1.048951048951049
+47,CT,6033.0,66.0,Female,Married,US Citizen,No,White,54.1,Vendor Referral,4,599,129623.6,1.1313258051024677
+48,MA,2169.0,31.0,Male,Married,US Citizen,No,White,56.2,Employee Referral,4,599,134655.2,1.175240485152656
+49,MA,1545.0,34.0,Male,Married,US Citizen,No,Asian,53.8,On-campus Recruiting,0,1,161.39999999999998,1.125052279381012
+50,CT,6278.0,52.0,Male,Single,US Citizen,No,White,53.0,Employee Referral,3,599,95241.0,1.108322877457131
+51,MA,2453.0,39.0,Female,Widowed,US Citizen,No,Asian,55.2,Employee Referral,0,459,76010.40000000001,1.1543287327478042
+67,MA,1960.0,34.0,Male,Single,US Citizen,No,White,20.0,MBTA ads,5,1823,182300.0,1.0400416016640666
+68,MA,1886.0,29.0,Female,Married,US Citizen,No,White,21.0,Billboard,4,3098,260232.0,1.0920436817472698
+69,MA,2169.0,28.0,Female,Divorced,US Citizen,No,White,16.0,Word of Mouth,0,57,2736.0,0.8320332813312532
+70,MA,1844.0,40.0,Female,Single,US Citizen,No,White,23.0,MBTA ads,6,1635,225630.0,1.1960478419136764
+71,MA,2199.0,34.0,Male,Widowed,US Citizen,No,White,22.0,Employee Referral,0,1005,66330.0,1.1440457618304731
+72,MA,1902.0,47.0,Female,Single,US Citizen,No,Two or more races,22.0,Diversity Job Fair,4,2552,224576.0,1.1440457618304731
+73,MA,1902.0,44.0,Female,Married,US Citizen,Yes,Hispanic,17.0,Diversity Job Fair,0,2,102.0,0.8840353614144566
+74,MA,2062.0,43.0,Male,Married,US Citizen,Yes,Asian,22.0,Diversity Job Fair,3,170,11220.0,1.1440457618304731
+75,MA,1810.0,34.0,Male,Single,US Citizen,No,Two or more races,16.76,Social Networks - Facebook Twitter etc,4,1593,106794.72000000002,0.8715548621944879
+76,MA,2747.0,40.0,Male,Divorced,US Citizen,No,White,18.0,On-line Web application,4,194,13968.0,0.9360374414976599
+77,MA,1915.0,47.0,Female,Single,Eligible NonCitizen,No,White,22.0,Search Engine - Google Bing Yahoo,4,1915,168520.0,1.1440457618304731
+78,MA,2452.0,38.0,Male,Single,US Citizen,No,Asian,17.0,MBTA ads,4,1089,74052.0,0.8840353614144566
+79,MA,2072.0,47.0,Male,Single,US Citizen,Yes,White,16.0,Word of Mouth,4,1551,99264.0,0.8320332813312532
+80,MA,2027.0,59.0,Female,Divorced,US Citizen,No,Asian,22.0,Billboard,4,1047,92136.0,1.1440457618304731
+81,MA,2031.0,28.0,Female,Married,US Citizen,No,White,16.0,Professional Society,5,725,58000.0,0.8320332813312532
+82,MA,1701.0,27.0,Female,Married,US Citizen,No,White,20.0,Search Engine - Google Bing Yahoo,4,439,35120.0,1.0400416016640666
+83,MA,2043.0,48.0,Female,Separated,US Citizen,No,Black or African American,20.0,Diversity Job Fair,4,963,77040.0,1.0400416016640666
+84,MA,1701.0,34.0,Male,Widowed,US Citizen,No,Black or African American,20.0,MBTA ads,4,823,65840.0,1.0400416016640666
+85,MA,2763.0,67.0,Female,Single,US Citizen,No,White,16.0,Search Engine - Google Bing Yahoo,4,641,41024.0,0.8320332813312532
+86,MA,2170.0,38.0,Female,Single,US Citizen,No,White,19.5,Internet Search,4,781,60918.0,1.0140405616224648
+87,MA,1845.0,34.0,Male,Single,US Citizen,No,White,22.0,Newspager/Magazine,4,1089,95832.0,1.1440457618304731
+88,MA,1775.0,34.0,Female,Single,US Citizen,No,White,21.0,Other,3,1602,100926.0,1.0920436817472698
+89,MA,2044.0,29.0,Female,Single,Non-Citizen,No,Black or African American,22.0,Pay Per Click - Google,4,1733,152504.0,1.1440457618304731
+90,MA,2134.0,37.0,Male,Married,US Citizen,No,White,24.75,Employee Referral,5,-5,-618.75,1.2870514820592824
+91,MA,2452.0,40.0,Male,Single,US Citizen,No,White,15.0,Employee Referral,4,1089,65340.0,0.7800312012480499
+92,MA,1880.0,38.0,Male,Single,US Citizen,No,Black or African American,15.0,MBTA ads,2,440,13200.0,0.7800312012480499
+93,MA,2189.0,40.0,Female,Married,US Citizen,Yes,White,15.75,Billboard,3,543,25656.75,0.8190327613104524
+94,MA,1821.0,30.0,Female,Single,US Citizen,No,White,19.75,Newspager/Magazine,0,-5,-296.25,1.0270410816432658
+95,MA,2110.0,39.0,Female,Married,US Citizen,No,White,15.0,Billboard,4,1460,87600.0,0.7800312012480499
+96,MA,1810.0,40.0,Male,Married,US Citizen,No,White,23.5,Billboard,4,1484,139496.0,1.2220488819552782
+97,MA,2061.0,50.0,Male,Married,US Citizen,No,White,20.0,Professional Society,1,725,14500.0,1.0400416016640666
+98,MA,2180.0,35.0,Male,Single,US Citizen,No,White,21.0,Pay Per Click - Google,4,781,65604.0,1.0920436817472698
+99,MA,2351.0,39.0,Female,Married,US Citizen,No,Black or African American,22.0,Pay Per Click - Google,2,1271,55924.0,1.1440457618304731
+100,MA,2125.0,31.0,Female,Single,US Citizen,Yes,White,16.75,Monster.com,4,1551,103917.0,0.8710348413936557
+101,MA,2343.0,26.0,Female,Married,US Citizen,No,White,17.0,Search Engine - Google Bing Yahoo,4,794,53992.0,0.8840353614144566
+102,MA,2026.0,43.0,Male,Single,US Citizen,No,White,21.25,MBTA ads,4,599,50915.0,1.1050442017680706
+103,MA,2045.0,39.0,Male,Married,US Citizen,No,White,21.0,Employee Referral,3,823,51849.0,1.0920436817472698
+104,MA,2129.0,34.0,Male,Single,US Citizen,No,White,17.0,Word of Mouth,2,908,30872.0,0.8840353614144566
+105,MA,2458.0,28.0,Female,Single,US Citizen,No,White,18.0,Word of Mouth,0,8,432.0,0.9360374414976599
+106,MA,2176.0,62.0,Female,Married,US Citizen,No,White,20.0,Search Engine - Google Bing Yahoo,4,922,73760.0,1.0400416016640666
+107,MA,2132.0,28.0,Male,Married,US Citizen,No,White,18.0,Professional Society,0,417,22518.0,0.9360374414976599
+108,MA,2176.0,31.0,Female,Single,US Citizen,No,White,23.0,Newspager/Magazine,4,1593,146556.0,1.1960478419136764
+109,MA,2155.0,36.0,Female,Married,US Citizen,No,White,24.0,Social Networks - Facebook Twitter etc,4,1635,156960.0,1.24804992199688
+110,MA,1905.0,32.0,Male,Single,US Citizen,Yes,White,19.0,Employee Referral,0,459,26163.0,0.9880395215808632
+111,MA,1550.0,37.0,Male,Single,US Citizen,No,Asian,18.0,Professional Society,4,1089,78408.0,0.9360374414976599
+112,MA,2121.0,34.0,Female,Widowed,US Citizen,Yes,Black or African American,24.0,MBTA ads,4,1873,179808.0,1.24804992199688
+113,MA,2145.0,27.0,Female,Married,US Citizen,No,Black or African American,19.0,Professional Society,0,459,26163.0,0.9880395215808632
+114,MA,2330.0,47.0,Female,Divorced,US Citizen,No,White,22.0,Diversity Job Fair,0,8,528.0,1.1440457618304731
+115,MA,2062.0,43.0,Male,Married,US Citizen,No,Black or African American,15.0,Diversity Job Fair,2,1179,35370.0,0.7800312012480499
+116,MA,2451.0,37.0,Female,Single,US Citizen,Yes,Two or more races,16.0,Professional Society,5,641,51280.0,0.8320332813312532
+117,MA,2451.0,25.0,Female,Single,US Citizen,Yes,White,17.0,Glassdoor,4,963,65484.0,0.8840353614144566
+118,MA,2108.0,48.0,Male,Divorced,US Citizen,No,American Indian or Alaska Native,16.0,Diversity Job Fair,5,1817,145360.0,0.8320332813312532
+119,MA,2169.0,38.0,Male,Married,US Citizen,No,White,15.0,MBTA ads,4,1460,87600.0,0.7800312012480499
+120,MA,1864.0,43.0,Female,Married,US Citizen,No,Asian,24.0,On-campus Recruiting,4,1047,100512.0,1.24804992199688
+121,MA,2176.0,34.0,Female,Divorced,US Citizen,No,White,14.0,Monster.com,4,1055,59080.0,0.7280291211648465
+122,MA,2127.0,40.0,Female,Married,US Citizen,No,White,24.0,Word of Mouth,4,1677,160992.0,1.24804992199688
+123,MA,1776.0,35.0,Male,Married,US Citizen,No,Asian,21.0,Search Engine - Google Bing Yahoo,4,1509,126756.0,1.0920436817472698
+124,MA,2324.0,65.0,Female,Single,US Citizen,No,White,19.75,Monster.com,4,1436,113444.0,1.0270410816432658
+125,MA,1886.0,43.0,Female,Married,US Citizen,No,White,20.0,Monster.com,5,781,78100.0,1.0400416016640666
+126,MA,2149.0,34.0,Male,Single,US Citizen,No,White,19.0,Social Networks - Facebook Twitter etc,3,1418,80826.0,0.9880395215808632
+127,MA,1775.0,27.0,Female,Single,US Citizen,No,White,16.0,Professional Society,4,1047,67008.0,0.8320332813312532
+128,MA,2081.0,45.0,Female,Separated,US Citizen,No,White,20.0,Newspager/Magazine,4,1334,106720.0,1.0400416016640666
+129,MA,1778.0,51.0,Female,Divorced,US Citizen,No,White,21.0,Employee Referral,4,1005,84420.0,1.0920436817472698
+130,MA,2109.0,53.0,Female,Separated,US Citizen,No,White,19.0,On-campus Recruiting,4,907,68932.0,0.9880395215808632
+131,MA,2445.0,58.0,Male,Married,US Citizen,No,White,17.0,Monster.com,5,1635,138975.0,0.8840353614144566
+132,MA,2446.0,31.0,Female,Married,US Citizen,No,White,21.0,Monster.com,3,1908,120204.0,1.0920436817472698
+133,MA,1887.0,42.0,Male,Single,US Citizen,No,White,19.0,Billboard,4,1005,76380.0,0.9880395215808632
+134,MA,2170.0,44.0,Female,Married,US Citizen,No,White,22.0,Search Engine - Google Bing Yahoo,3,1347,88902.0,1.1440457618304731
+135,MA,2127.0,47.0,Female,Married,US Citizen,No,White,24.0,Search Engine - Google Bing Yahoo,4,105,10080.0,1.24804992199688
+136,MA,1721.0,40.0,Male,Single,US Citizen,No,Black or African American,14.0,On-campus Recruiting,4,865,48440.0,0.7280291211648465
+137,MA,1801.0,37.0,Male,Married,US Citizen,No,Asian,21.0,Pay Per Click - Google,4,1999,167916.0,1.0920436817472698
+138,MA,2048.0,31.0,Male,Married,US Citizen,No,White,17.0,Newspager/Magazine,4,1453,98804.0,0.8840353614144566
+139,MA,1810.0,39.0,Female,Single,US Citizen,No,Asian,19.0,Monster.com,4,693,52668.0,0.9880395215808632
+140,MA,2050.0,36.0,Male,Single,US Citizen,No,White,15.0,Social Networks - Facebook Twitter etc,3,164,7380.0,0.7800312012480499
+141,MA,1886.0,36.0,Female,Married,US Citizen,No,White,15.25,Internet Search,0,83,3797.25,0.7930317212688507
+142,MA,2122.0,42.0,Female,Married,US Citizen,No,Black or African American,20.0,Website Banner Ads,3,501,30060.0,1.0400416016640666
+143,MA,1844.0,44.0,Female,Single,US Citizen,Yes,Two or more races,19.0,Diversity Job Fair,5,1468,139460.0,0.9880395215808632
+144,MA,1938.0,45.0,Male,Widowed,US Citizen,No,White,15.0,Pay Per Click,0,2,90.0,0.7800312012480499
+145,MA,2189.0,31.0,Female,Single,US Citizen,No,White,17.0,Newspager/Magazine,4,907,61676.0,0.8840353614144566
+146,MA,2451.0,43.0,Female,Married,US Citizen,No,White,23.0,On-campus Recruiting,4,963,88596.0,1.1960478419136764
+147,MA,2330.0,40.0,Female,Married,US Citizen,No,White,20.0,Other,3,1858,111480.0,1.0400416016640666
+148,MA,2184.0,31.0,Female,Married,US Citizen,No,Black or African American,24.0,Monster.com,4,1271,122016.0,1.24804992199688
+149,MA,1760.0,49.0,Female,Single,US Citizen,No,Black or African American,14.0,Diversity Job Fair,4,1318,73808.0,0.7280291211648465
+150,MA,2346.0,41.0,Female,Single,US Citizen,No,White,20.0,Monster.com,0,459,27540.0,1.0400416016640666
+151,MA,2453.0,33.0,Female,Divorced,US Citizen,No,White,15.0,MBTA ads,4,1187,71220.0,0.7800312012480499
+152,MA,2110.0,28.0,Male,Single,US Citizen,No,Black or African American,18.0,Diversity Job Fair,4,921,66312.0,0.9360374414976599
+153,MA,2421.0,34.0,Male,Married,US Citizen,No,White,22.0,Employee Referral,4,1150,101200.0,1.1440457618304731
+154,MA,2136.0,40.0,Male,Married,US Citizen,No,White,21.0,On-campus Recruiting,4,781,65604.0,1.0920436817472698
+155,MA,1810.0,50.0,Female,Separated,US Citizen,No,Asian,15.0,Diversity Job Fair,5,1187,89025.0,0.7800312012480499
+156,MA,2132.0,33.0,Female,Single,US Citizen,No,White,19.0,Vendor Referral,4,1089,82764.0,0.9880395215808632
+157,MA,2152.0,37.0,Female,Widowed,US Citizen,No,Two or more races,18.5,Professional Society,1,762,14097.0,0.9620384815392615
+158,MA,2478.0,41.0,Male,Married,US Citizen,No,White,16.0,On-campus Recruiting,5,1005,80400.0,0.8320332813312532
+159,MA,1760.0,38.0,Male,Single,US Citizen,No,Black or African American,22.0,MBTA ads,2,865,38060.0,1.1440457618304731
+160,MA,2351.0,38.0,Female,Married,US Citizen,No,White,18.0,Social Networks - Facebook Twitter etc,4,1070,77040.0,0.9360374414976599
+161,MA,2458.0,29.0,Male,Single,US Citizen,No,Black or African American,24.0,Search Engine - Google Bing Yahoo,2,718,34464.0,1.24804992199688
+162,MA,2176.0,31.0,Female,Single,US Citizen,No,White,22.0,MBTA ads,4,1623,142824.0,1.1440457618304731
+163,MA,1749.0,44.0,Female,Married,US Citizen,No,White,17.0,Search Engine - Google Bing Yahoo,4,2258,153544.0,0.8840353614144566
+164,MA,2451.0,29.0,Male,Married,US Citizen,No,White,18.0,Search Engine - Google Bing Yahoo,4,514,37008.0,0.9360374414976599
+165,MA,2451.0,36.0,Male,Single,US Citizen,No,Black or African American,17.0,Search Engine - Google Bing Yahoo,4,3161,214948.0,0.8840353614144566
+166,MA,1742.0,33.0,Female,Divorced,Eligible NonCitizen,No,Asian,19.0,Social Networks - Facebook Twitter etc,0,19,1083.0,0.9880395215808632
+167,MA,2109.0,56.0,Male,Single,US Citizen,No,White,16.0,Employee Referral,4,907,58048.0,0.8320332813312532
+168,MA,2474.0,47.0,Female,Divorced,US Citizen,No,White,16.0,Billboard,4,267,17088.0,0.8320332813312532
+169,MA,2478.0,33.0,Male,Divorced,US Citizen,No,White,21.0,Pay Per Click - Google,4,194,16296.0,1.0920436817472698
+170,MA,2176.0,35.0,Male,Divorced,US Citizen,Yes,White,20.0,Professional Society,4,1705,136400.0,1.0400416016640666
+171,MA,2171.0,45.0,Female,Married,US Citizen,No,Asian,22.0,Search Engine - Google Bing Yahoo,5,1677,184470.0,1.1440457618304731
+172,MA,1420.0,44.0,Male,Married,US Citizen,No,Black or African American,24.0,Glassdoor,4,1842,176832.0,1.24804992199688
+173,MA,1460.0,33.0,Female,Married,US Citizen,No,White,16.0,Glassdoor,2,1954,62528.0,0.8320332813312532
+174,MA,1730.0,33.0,Male,Widowed,US Citizen,No,White,17.0,Employee Referral,6,1089,111078.0,0.8840353614144566
+175,MA,1886.0,43.0,Female,Separated,US Citizen,No,White,17.0,Website Banner Ads,4,907,61676.0,0.8840353614144566
+176,MA,2155.0,30.0,Male,Single,US Citizen,No,White,18.0,Search Engine - Google Bing Yahoo,4,497,35784.0,0.9360374414976599
+177,MA,1801.0,49.0,Female,Single,US Citizen,No,Black or African American,20.0,Diversity Job Fair,0,-3,-180.0,1.0400416016640666
+178,MA,2148.0,43.0,Male,Single,US Citizen,No,White,21.0,Word of Mouth,4,571,47964.0,1.0920436817472698
+179,MA,2154.0,29.0,Female,Married,US Citizen,No,Black or African American,21.0,On-campus Recruiting,4,641,53844.0,1.0920436817472698
+180,MA,2191.0,42.0,Female,Single,US Citizen,No,Asian,15.2,Search Engine - Google Bing Yahoo,4,1005,61104.0,0.7904316172646906
+181,MA,2149.0,32.0,Female,Married,US Citizen,No,White,15.0,Newspager/Magazine,4,1047,62820.0,0.7800312012480499
+182,MA,2130.0,53.0,Female,Single,US Citizen,No,White,24.5,Employee Referral,4,963,94374.0,1.2740509620384814
+183,MA,2093.0,49.0,Female,Married,US Citizen,No,White,16.0,Billboard,1,1593,25488.0,0.8320332813312532
+184,MA,2359.0,44.0,Female,Divorced,US Citizen,No,White,21.0,MBTA ads,5,777,81585.0,1.0920436817472698
+185,MA,2050.0,35.0,Female,Divorced,US Citizen,No,Two or more races,14.0,Word of Mouth,4,1999,111944.0,0.7280291211648465
+186,MA,2301.0,32.0,Male,Married,US Citizen,No,Asian,22.0,On-campus Recruiting,4,865,76120.0,1.1440457618304731
+187,MA,2747.0,35.0,Male,Married,US Citizen,Yes,White,19.0,Word of Mouth,3,543,30951.0,0.9880395215808632
+188,MA,2718.0,49.0,Female,Single,Eligible NonCitizen,No,Asian,14.0,Glassdoor,4,1509,84504.0,0.7280291211648465
+189,MA,1801.0,42.0,Female,Married,Non-Citizen,No,Two or more races,15.0,Diversity Job Fair,4,1435,86100.0,0.7800312012480499
+190,MA,2066.0,52.0,Female,Single,US Citizen,No,White,20.0,Billboard,0,62,3720.0,1.0400416016640666
+191,MA,1876.0,34.0,Female,Divorced,US Citizen,No,White,20.0,Social Networks - Facebook Twitter etc,3,124,7440.0,1.0400416016640666
+192,MA,2093.0,50.0,Female,Divorced,US Citizen,No,Black or African American,24.0,Billboard,4,1229,117984.0,1.24804992199688
+193,MA,2021.0,34.0,Female,Single,US Citizen,No,White,22.0,Professional Society,0,865,57090.0,1.1440457618304731
+194,MA,2171.0,30.0,Male,Divorced,US Citizen,No,White,19.0,Information Session,5,1271,120745.0,0.9880395215808632
+195,MA,2747.0,31.0,Female,Married,US Citizen,No,White,21.0,Social Networks - Facebook Twitter etc,5,1596,167580.0,1.0920436817472698
+196,MA,2124.0,32.0,Female,Single,US Citizen,No,White,20.0,Newspager/Magazine,0,362,21720.0,1.0400416016640666
+197,MA,1887.0,37.0,Female,Single,US Citizen,No,White,15.0,Monster.com,2,1114,33420.0,0.7800312012480499
+198,MA,2030.0,30.0,Male,Single,US Citizen,Yes,White,23.0,Newspager/Magazine,3,125,8625.0,1.1960478419136764
+199,MA,2324.0,52.0,Male,Married,Eligible NonCitizen,No,White,21.0,Website Banner Ads,4,1575,132300.0,1.0920436817472698
+200,MA,2109.0,48.0,Female,Single,US Citizen,Yes,Two or more races,16.0,Diversity Job Fair,4,1265,80960.0,0.8320332813312532
+201,MA,2458.0,35.0,Female,Single,US Citizen,No,Asian,22.0,Search Engine - Google Bing Yahoo,1,2583,56826.0,1.1440457618304731
+202,MA,1730.0,39.0,Female,Widowed,US Citizen,No,Asian,15.0,On-campus Recruiting,4,641,38460.0,0.7800312012480499
+203,MA,1810.0,29.0,Female,Married,US Citizen,No,White,29.0,Newspager/Magazine,3,447,38889.0,1.2564991334488735
+204,MA,2145.0,51.0,Female,Married,US Citizen,No,White,27.0,Employee Referral,5,-20,-2700.0,1.1698440207972272
+205,MA,2171.0,27.0,Female,Single,US Citizen,No,White,27.0,Monster.com,2,1915,103410.0,1.1698440207972272
+206,MA,2210.0,51.0,Female,Single,US Citizen,No,White,26.0,Search Engine - Google Bing Yahoo,3,1180,92040.0,1.1265164644714039
+207,MA,1013.0,34.0,Male,Single,US Citizen,No,White,22.0,Word of Mouth,4,641,56408.0,0.953206239168111
+208,MA,2148.0,37.0,Female,Single,US Citizen,No,Black or African American,25.0,Employee Referral,4,1579,157900.0,1.0831889081455808
+209,MA,1890.0,40.0,Male,Married,US Citizen,No,White,26.0,Careerbuilder,4,1915,199160.0,1.1265164644714039
+210,MA,1752.0,36.0,Female,Married,US Citizen,No,White,25.0,Word of Mouth,3,602,45150.0,1.0831889081455808
+211,MA,2169.0,39.0,Male,Married,US Citizen,No,White,26.0,Other,4,392,40768.0,1.1265164644714039
+212,MA,2458.0,38.0,Male,Single,Eligible NonCitizen,No,Two or more races,25.0,Newspager/Magazine,3,1698,127350.0,1.0831889081455808
+213,MA,2343.0,66.0,Female,Separated,US Citizen,No,Black or African American,29.0,Search Engine - Google Bing Yahoo,4,1675,194300.0,1.2564991334488735
+214,MA,2133.0,28.0,Female,Separated,US Citizen,No,White,24.0,Pay Per Click - Google,1,725,17400.0,1.0398613518197575
+215,MA,1824.0,39.0,Female,Married,US Citizen,No,Black or African American,27.0,Professional Society,4,725,78300.0,1.1698440207972272
+216,MA,2324.0,30.0,Female,Single,US Citizen,No,Black or African American,24.0,Newspager/Magazine,4,865,83040.0,1.0398613518197575
+217,MA,2143.0,36.0,Male,Single,US Citizen,Yes,White,29.0,Social Networks - Facebook Twitter etc,4,770,89320.0,1.2564991334488735
+218,MA,2170.0,34.0,Female,Married,US Citizen,No,White,24.0,Word of Mouth,4,280,26880.0,1.0398613518197575
+219,MA,2128.0,53.0,Male,Married,US Citizen,No,Black or African American,29.0,Diversity Job Fair,1,399,11571.0,1.2564991334488735
+220,MA,1886.0,31.0,Female,Married,US Citizen,No,White,24.25,Professional Society,4,781,75757.0,1.0506932409012133
+221,MA,1824.0,34.0,Female,Separated,US Citizen,No,American Indian or Alaska Native,27.0,Word of Mouth,4,1005,108540.0,1.1698440207972272
+222,MA,2155.0,29.0,Male,Single,US Citizen,Yes,White,24.0,Newspager/Magazine,4,963,92448.0,1.0398613518197575
+223,MA,2021.0,45.0,Female,Single,US Citizen,No,White,24.0,Monster.com,4,770,73920.0,1.0398613518197575
+224,MA,2445.0,33.0,Female,Married,Non-Citizen,No,White,28.0,Glassdoor,4,236,26432.0,1.2131715771230505
+225,MA,2021.0,33.0,Female,Single,US Citizen,No,White,25.0,Vendor Referral,0,25,1875.0,1.0831889081455808
+226,MA,2351.0,25.0,Female,Separated,US Citizen,No,White,28.0,Other,0,392,32928.0,1.2131715771230505
+227,MA,1742.0,41.0,Female,Divorced,US Citizen,No,White,23.0,Search Engine - Google Bing Yahoo,4,770,70840.0,0.9965337954939342
+228,MA,1821.0,31.0,Female,Divorced,US Citizen,No,American Indian or Alaska Native,22.5,MBTA ads,5,1823,205087.5,0.9748700173310226
+229,MA,2128.0,48.0,Female,Single,US Citizen,No,White,25.0,Professional Society,6,725,108750.0,1.0831889081455808
+230,MA,2090.0,38.0,Female,Divorced,US Citizen,No,Asian,22.0,Glassdoor,4,448,39424.0,0.953206239168111
+231,MA,2126.0,33.0,Male,Married,US Citizen,No,White,28.0,Word of Mouth,4,378,42336.0,1.2131715771230505
+232,MA,1770.0,38.0,Male,Married,US Citizen,No,White,22.0,Information Session,4,1089,95832.0,0.953206239168111
+233,MA,2122.0,41.0,Female,Widowed,US Citizen,No,White,24.0,On-campus Recruiting,0,69,4968.0,1.0398613518197575
+234,MA,2324.0,35.0,Female,Single,US Citizen,No,Black or African American,26.1,Glassdoor,5,1047,136633.5,1.1308492201039864
+235,MA,2324.0,41.0,Female,Married,US Citizen,No,White,23.0,Vendor Referral,0,51,3519.0,0.9965337954939342
+236,MA,2176.0,31.0,Female,Married,US Citizen,No,Two or more races,23.0,Newspager/Magazine,0,45,3105.0,0.9965337954939342
+237,MA,2149.0,30.0,Female,Single,US Citizen,No,White,26.0,Newspager/Magazine,0,459,35802.0,1.1265164644714039
+238,MA,2472.0,32.0,Male,Single,US Citizen,No,White,25.0,MBTA ads,1,1116,27900.0,1.0831889081455808
+239,MA,1450.0,25.0,Male,Married,US Citizen,No,White,27.0,Professional Society,4,1698,183384.0,1.1698440207972272
+240,MA,2126.0,47.0,Female,Single,US Citizen,No,Black or African American,25.0,Billboard,6,1145,171750.0,1.0831889081455808
+241,MA,2127.0,41.0,Male,Single,US Citizen,No,Hispanic,26.0,Diversity Job Fair,4,1635,170040.0,1.1265164644714039
+242,MA,1460.0,43.0,Male,Separated,US Citizen,No,Black or African American,29.0,On-campus Recruiting,4,1145,132820.0,1.2564991334488735
+243,MA,1040.0,32.0,Female,Single,US Citizen,No,White,26.39,Glassdoor,4,599,63230.44,1.1434142114384749
+244,MA,2492.0,65.0,Female,Married,US Citizen,No,Asian,25.0,Newspager/Magazine,3,462,34650.0,1.0831889081455808
+245,MA,2472.0,28.0,Female,Married,US Citizen,No,Asian,28.0,Monster.com,0,72,6048.0,1.2131715771230505
+246,MA,1886.0,31.0,Female,Married,US Citizen,No,White,29.0,Pay Per Click - Google,5,264,38280.0,1.2564991334488735
+247,MA,2050.0,38.0,Female,Married,Eligible NonCitizen,No,Asian,26.0,MBTA ads,4,1551,161304.0,1.1265164644714039
+248,MA,1902.0,36.0,Female,Divorced,Eligible NonCitizen,No,White,26.0,Search Engine - Google Bing Yahoo,0,26,2028.0,1.1265164644714039
+249,MA,2138.0,45.0,Male,Married,US Citizen,No,White,22.0,Glassdoor,4,218,19184.0,0.953206239168111
+250,MA,2062.0,31.0,Male,Married,US Citizen,No,White,29.0,Monster.com,4,2132,247312.0,1.2564991334488735
+251,MA,1851.0,30.0,Female,Single,US Citizen,No,White,23.0,Monster.com,4,1990,183080.0,0.9965337954939342
+252,MA,2045.0,54.0,Male,Single,US Citizen,No,White,22.0,Pay Per Click - Google,5,641,70510.0,0.953206239168111
+253,MA,2129.0,64.0,Female,Married,US Citizen,No,White,28.75,Search Engine - Google Bing Yahoo,4,419,48185.0,1.2456672443674177
+254,MA,2472.0,42.0,Male,Widowed,US Citizen,No,White,23.0,Pay Per Click - Google,4,1162,106904.0,0.9965337954939342
+255,MA,1778.0,32.0,Female,Single,US Citizen,No,White,22.0,Vendor Referral,4,539,47432.0,0.953206239168111
+256,MA,2459.0,41.0,Male,Single,US Citizen,No,Black or African American,22.0,Employee Referral,4,683,60104.0,0.953206239168111
+257,MA,2045.0,59.0,Male,Single,US Citizen,No,White,29.0,Professional Society,5,1140,165300.0,1.2564991334488735
+258,MA,2302.0,32.0,Female,Single,US Citizen,No,White,22.0,Newspager/Magazine,4,641,56408.0,0.953206239168111
+259,MA,1810.0,32.0,Male,Single,US Citizen,No,White,24.25,Vendor Referral,4,725,70325.0,1.0506932409012133
