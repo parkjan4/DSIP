@@ -1,0 +1,2688 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0321.1733                               -->
+<workbook source-build='2019.1.2 (20191.19.0321.1733)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ROI' inline='true' name='federated.1wtdhn413svu76148iqza1ewofa6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ROI' name='textscan.068g2k71yhnk5x103aprg06e9yn7'>
+            <connection class='textscan' directory='/Users/saschafrey/Documents/EPFL/MA2/Data Science/DSIP' filename='ROI.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.068g2k71yhnk5x103aprg06e9yn7' name='ROI.csv' table='[ROI#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='Total' ordinal='1' />
+            <column datatype='real' name='return_mean' ordinal='2' />
+            <column datatype='real' name='return_sum' ordinal='3' />
+            <column datatype='real' name='ROI' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return_mean]</local-name>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias>return_mean</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_sum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return_sum]</local-name>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias>return_sum</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROI]</local-name>
+            <parent-name>[ROI.csv]</parent-name>
+            <remote-alias>ROI</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:return_sum:qk]&quot;' value='% of Total Value' />
+          <alias key='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:Total:qk]&quot;' value='% of Total Expenditure ' />
+          <alias key='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_sum:qk]&quot;' value='Value Created' />
+          <alias key='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]&quot;' value='Total Expenditure' />
+        </aliases>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([ROI]) / TOTAL(SUM([ROI]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([ROI]) / TOTAL(SUM([ROI]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation3]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Total]) / TOTAL(SUM([Total]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation4]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Total]) / TOTAL(SUM([Total]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation5]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([return_sum]) / TOTAL(SUM([return_sum]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Norm Total_sum' datatype='real' name='[Calculation_529384113346125825]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[return_sum]/(max([return_sum])-MIN([return_sum]))' />
+      </column>
+      <column caption='([Return Sum])/1000' datatype='real' name='[Calculation_529384113350860802]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([return_sum])/1000' />
+      </column>
+      <column caption='Source' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[ROI]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+      <column caption='Return Mean' datatype='real' name='[return_mean]' role='measure' type='quantitative' />
+      <column caption='Return Sum' datatype='real' name='[return_sum]' role='measure' type='quantitative' />
+      <column-instance column='[ROI]' derivation='Attribute' name='[attr:ROI:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ROI]' derivation='Avg' name='[avg:ROI:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ROI]' derivation='Median' name='[med:ROI:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total]' derivation='Sum' name='[pcdf:sum:Total:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[return_sum]' derivation='Sum' name='[pcdf:sum:return_sum:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[ROI]' derivation='Sum' name='[pcto:sum:ROI:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Total]' derivation='Sum' name='[pcto:sum:Total:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[return_sum]' derivation='Sum' name='[pcto:sum:return_sum:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_529384113350860802]' derivation='Sum' name='[sum:Calculation_529384113350860802:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ROI]' derivation='Sum' name='[sum:ROI:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[return_mean]' derivation='Sum' name='[sum:return_mean:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[return_sum]' derivation='Sum' name='[sum:return_sum:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation3]' derivation='User' name='[usr:Calculation3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation4]' derivation='User' name='[usr:Calculation4:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation5]' derivation='User' name='[usr:Calculation5:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' dim-percentage='0.359069' measure-ordering='alphabetic' measure-percentage='0.640931' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[attr:ROI:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[avg:ROI:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[med:ROI:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:ROI:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:ROI:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[usr:Calculation2:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_mean:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcdf:sum:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[usr:Calculation3:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[usr:Calculation4:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcdf:sum:return_sum:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:return_sum:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Calculation_529384113350860802:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_sum:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[usr:Calculation5:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:F1:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Pay Per Click&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Billboard&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Monster.com&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Social Networks - Facebook Twitter etc&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pay Per Click - Google&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Newspager/Magazine&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Careerbuilder&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;On-campus Recruiting&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Website Banner Ads&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Professional Society&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Diversity Job Fair&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Search Engine - Google Bing Yahoo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MBTA ads&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <date-options start-of-week='monday' />
+    </datasource>
+    <datasource caption='pay' inline='true' name='federated.0xe856a1wdamhz1a82vv91lkenmb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pay' name='textscan.1b8u4331fdwwv71epkxl300g2ucx'>
+            <connection class='textscan' directory='/Users/saschafrey/Documents/EPFL/MA2/Data Science/DSIP/Project' filename='pay.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1b8u4331fdwwv71epkxl300g2ucx' name='pay.csv' table='[pay#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='real' name='zip' ordinal='2' />
+            <column datatype='real' name='age' ordinal='3' />
+            <column datatype='string' name='sex' ordinal='4' />
+            <column datatype='string' name='maritaldesc' ordinal='5' />
+            <column datatype='string' name='citizendesc' ordinal='6' />
+            <column datatype='string' name='hispanic_latino' ordinal='7' />
+            <column datatype='string' name='racedesc' ordinal='8' />
+            <column datatype='real' name='pay_rate' ordinal='9' />
+            <column datatype='string' name='employee_source' ordinal='10' />
+            <column datatype='integer' name='performance_score' ordinal='11' />
+            <column datatype='integer' name='tenure' ordinal='12' />
+            <column datatype='real' name='return' ordinal='13' />
+            <column datatype='real' name='rel_pay' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maritaldesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[maritaldesc]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>maritaldesc</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>citizendesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[citizendesc]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>citizendesc</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hispanic_latino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hispanic_latino]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>hispanic_latino</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>racedesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[racedesc]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>racedesc</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pay_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pay_rate]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>pay_rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_source]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>employee_source</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>performance_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[performance_score]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>performance_score</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[return]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>return</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rel_pay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rel_pay]</local-name>
+            <parent-name>[pay.csv]</parent-name>
+            <remote-alias>rel_pay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Citizendesc' datatype='string' name='[citizendesc]' role='dimension' type='nominal' />
+      <column caption='Employee Source' datatype='string' name='[employee_source]' role='dimension' type='nominal' />
+      <column caption='Hispanic Latino' datatype='string' name='[hispanic_latino]' role='dimension' type='nominal' />
+      <column caption='Maritaldesc' datatype='string' name='[maritaldesc]' role='dimension' type='nominal' />
+      <column caption='Pay Rate' datatype='real' name='[pay_rate]' role='measure' type='quantitative' />
+      <column caption='Performance Score' datatype='integer' name='[performance_score]' role='measure' type='quantitative' />
+      <column caption='Racedesc' datatype='string' name='[racedesc]' role='dimension' type='nominal' />
+      <column caption='Rel Pay' datatype='real' name='[rel_pay]' role='measure' type='quantitative' />
+      <column caption='Return' datatype='real' name='[return]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column caption='Zip' datatype='real' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.474265' measure-ordering='alphabetic' measure-percentage='0.525735' show-structure='true' />
+      <date-options start-of-week='monday' />
+    </datasource>
+    <datasource caption='clean_core' inline='true' name='federated.04op8b514s5nki18tf9m30icb3sf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_core' name='textscan.1ysj40702iugf418cza1217m7e7f'>
+            <connection class='textscan' directory='/Users/saschafrey/Documents/EPFL/MA2/Data Science/DSIP/Project' filename='clean_core.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ysj40702iugf418cza1217m7e7f' name='clean_core.csv' table='[clean_core#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='employee_name' ordinal='1' />
+            <column datatype='real' name='employee_number' ordinal='2' />
+            <column datatype='string' name='state' ordinal='3' />
+            <column datatype='real' name='zip' ordinal='4' />
+            <column datatype='date' name='dob' ordinal='5' />
+            <column datatype='real' name='age' ordinal='6' />
+            <column datatype='string' name='sex' ordinal='7' />
+            <column datatype='string' name='maritaldesc' ordinal='8' />
+            <column datatype='string' name='citizendesc' ordinal='9' />
+            <column datatype='string' name='hispanic_latino' ordinal='10' />
+            <column datatype='string' name='racedesc' ordinal='11' />
+            <column datatype='date' name='date_of_hire' ordinal='12' />
+            <column datatype='date' name='date_of_termination' ordinal='13' />
+            <column datatype='string' name='reason_for_term' ordinal='14' />
+            <column datatype='string' name='employment_status' ordinal='15' />
+            <column datatype='string' name='department' ordinal='16' />
+            <column datatype='string' name='position' ordinal='17' />
+            <column datatype='real' name='pay_rate' ordinal='18' />
+            <column datatype='string' name='manager_name' ordinal='19' />
+            <column datatype='string' name='employee_source' ordinal='20' />
+            <column datatype='integer' name='performance_score' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_name]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>employee_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employee_number]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>employee_number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maritaldesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[maritaldesc]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>maritaldesc</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>citizendesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[citizendesc]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>citizendesc</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hispanic_latino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hispanic_latino]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>hispanic_latino</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>racedesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[racedesc]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>racedesc</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_hire</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_of_hire]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>date_of_hire</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_termination</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_of_termination]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>date_of_termination</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_for_term</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_for_term]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>reason_for_term</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employment_status]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>employment_status</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>department</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pay_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pay_rate]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>pay_rate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manager_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[manager_name]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>manager_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_source]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>employee_source</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>performance_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[performance_score]</local-name>
+            <parent-name>[clean_core.csv]</parent-name>
+            <remote-alias>performance_score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.04op8b514s5nki18tf9m30icb3sf]&quot;' value='Number of Hires' />
+          <alias key='&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]&quot;' value='Hire' />
+        </aliases>
+      </column>
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3.68' />
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([employee_number]) / TOTAL(COUNT([employee_number]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([employee_number]) / TOTAL(COUNT([employee_number]))'>
+          <table-calc ordering-type='Table' />
+        </calculation>
+      </column>
+      <column caption='Value' datatype='real' name='[Calculation_529384113328349184]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([date_of_termination]-[date_of_hire])*[pay_rate]*[performance_score]' />
+      </column>
+      <column caption='DOH' datatype='datetime' name='[Calculation_6317846644956372992]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [date_of_hire])' />
+      </column>
+      <column caption='Total count' datatype='integer' name='[Calculation_6317846645231788035]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF FIRST() = 0&#10;THEN SUM({FIXED [racedesc]: SUM([Number of Records])})&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Percent' datatype='real' name='[Calculation_6317846645235040260]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [sex] = &quot;Central&quot; THEN [Number of Records] END) / SUM({FIXED [racedesc]: SUM([Number of Records])})' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Citizendesc' datatype='string' name='[citizendesc]' role='dimension' type='nominal' />
+      <column caption='Date Of Hire' datatype='date' name='[date_of_hire]' role='dimension' type='ordinal' />
+      <column caption='Date Of Termination' datatype='date' name='[date_of_termination]' role='dimension' type='ordinal' />
+      <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+      <column caption='Dob' datatype='date' name='[dob]' role='dimension' type='ordinal' />
+      <column caption='Employee Name' datatype='string' name='[employee_name]' role='dimension' type='nominal' />
+      <column caption='Employee Number' datatype='real' name='[employee_number]' role='dimension' type='ordinal' />
+      <column caption='Employee Source' datatype='string' name='[employee_source]' role='dimension' type='nominal' />
+      <column caption='Employment Status' datatype='string' name='[employment_status]' role='dimension' type='nominal' />
+      <column caption='Hispanic Latino' datatype='string' name='[hispanic_latino]' role='dimension' type='nominal' />
+      <column caption='Manager Name' datatype='string' name='[manager_name]' role='dimension' type='nominal' />
+      <column caption='Maritaldesc' datatype='string' name='[maritaldesc]' role='dimension' type='nominal' />
+      <column caption='Pay Rate' datatype='real' name='[pay_rate]' role='measure' type='quantitative' />
+      <column caption='Performance Score' datatype='integer' name='[performance_score]' role='measure' type='quantitative' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Racedesc' datatype='string' name='[racedesc]' role='dimension' type='nominal' />
+      <column caption='Reason For Term' datatype='string' name='[reason_for_term]' role='dimension' type='nominal' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Zip' datatype='real' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[department]' derivation='Attribute' name='[attr:department:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date_of_hire]' derivation='Count' name='[cnt:date_of_hire:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date_of_termination]' derivation='Count' name='[cnt:date_of_termination:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[employee_number]' derivation='Count' name='[cnt:employee_number:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='CountD' name='[ctd:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+      <column-instance column='[employment_status]' derivation='None' name='[none:employment_status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[racedesc]' derivation='None' name='[none:racedesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[reason_for_term]' derivation='None' name='[none:reason_for_term:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Count' name='[pcto:cnt:Number of Records:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Count' name='[pcto:cnt:Number of Records:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[employee_number]' derivation='Count' name='[pcto:cnt:employee_number:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[employee_number]' derivation='Count' name='[pcto:cnt:employee_number:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' />
+      </column-instance>
+      <column-instance column='[Calculation_6317846644956372992]' derivation='User' name='[usr:Calculation_6317846644956372992:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Employment Status,Reason For Term)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:employment_status:nk]' />
+          <groupfilter function='level-members' level='[none:reason_for_term:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (MY(Pivot Field Values),Pivot Field Names)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[my:Pivot Field Values:ok]' />
+          <groupfilter function='level-members' level='[none:Pivot Field Names:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.604167' measure-ordering='alphabetic' measure-percentage='0.395833' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[ctd:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:6]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:date_of_termination:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:employee_number:qk:3]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:employee_number:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[usr:Calculation2:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:date_of_hire:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[usr:Calculation_6317846644956372992:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:sum:Number of Records:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:2]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:racedesc:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;American Indian or Alaska Native&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Two or more races&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Hispanic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Black or African American&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Asian&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:reason_for_term:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;more money&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Another position&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;hours&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;performance&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;N/A - Has not started yet&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;maternity leave - did not return&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Voluntarily Terminated&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;attendance&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Terminated for Cause&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;medical issues&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;relocation out of area&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;retiring&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;unhappy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;N/A - still employed&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;military&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;career change&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;return to school&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;no-call, no-show&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;gross misconduct&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:department:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Admin Offices&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Production&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;IT/IS&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Executive Office&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Software Engineering&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[attr:department:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Admin Offices&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Production&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;IT/IS&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Software Engineering&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Executive Office&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:department:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Admin Offices&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Production&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;IT/IS&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Software Engineering&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Executive Office&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='798' />
+            <format attr='height' value='763' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]' />
+              <wedge-size column='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' />
+              <size column='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>State: </run>
+              <run bold='true'>&lt;[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Number of Employees: </run>
+              <run bold='true'>&lt;[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]</field>
+                      <field>[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;MA&quot;</value>
+                    <value>266</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='10' y='47' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>State: </run>
+              <run bold='true'>&lt;[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Number of Employees: </run>
+              <run bold='true'>&lt;[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]</field>
+                      <field>[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;CT&quot;</value>
+                    <value>6</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='5' y='-71' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{356254B1-7B13-4AD9-AFEE-5BDD91BCE94A}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Hispanic Latino' datatype='string' name='[hispanic_latino]' role='dimension' type='nominal' />
+            <column-instance column='[hispanic_latino]' derivation='None' name='[none:hispanic_latino:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:hispanic_latino:nk]</cols>
+      </table>
+      <simple-id uuid='{A5E59426-B8A5-46C0-B594-A1D3B5643A47}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ROI' name='federated.1wtdhn413svu76148iqza1ewofa6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtdhn413svu76148iqza1ewofa6'>
+            <column caption='Source' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column caption='Return Mean' datatype='real' name='[return_mean]' role='measure' type='quantitative' />
+            <column caption='Return Sum' datatype='real' name='[return_sum]' role='measure' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[return_mean]' derivation='Sum' name='[sum:return_mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[return_sum]' derivation='Sum' name='[sum:return_sum:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_sum:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_sum:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_mean:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1wtdhn413svu76148iqza1ewofa6].[Multiple Values]' scope='rows' value='Value [-] &amp; Total Expenditure [$K]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' value='27' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' value='-90' />
+            <format attr='text-orientation' field='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtdhn413svu76148iqza1ewofa6].[Multiple Values]</rows>
+        <cols>([federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk] / [federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{3BABDC5B-1535-419E-BF80-54724D03E920}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column-instance column='[employee_number]' derivation='Count' name='[cnt:employee_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='real' name='[employee_number]' role='dimension' type='ordinal' />
+            <column caption='Employee Source' datatype='string' name='[employee_source]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employee_source]' derivation='None' name='[none:employee_source:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employee_source:nk]' value='53' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employee_source:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:department:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1166' />
+                <format attr='maxwidth' value='1166' />
+                <format attr='minheight' value='733' />
+                <format attr='maxheight' value='733' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:employee_source:nk]</cols>
+      </table>
+      <simple-id uuid='{B8FE9E82-6535-4325-AF2D-E54162FE1D79}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ROI' name='federated.1wtdhn413svu76148iqza1ewofa6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtdhn413svu76148iqza1ewofa6'>
+            <column caption='Source' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column datatype='real' name='[ROI]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ROI]' derivation='Sum' name='[sum:ROI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1wtdhn413svu76148iqza1ewofa6].[sum:ROI:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1wtdhn413svu76148iqza1ewofa6].[sum:Total:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1wtdhn413svu76148iqza1ewofa6].[sum:ROI:qk]' scope='rows' value='Return on Investment' />
+            <format attr='width' field='[federated.1wtdhn413svu76148iqza1ewofa6].[sum:ROI:qk]' value='69' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' value='80' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wtdhn413svu76148iqza1ewofa6].[sum:ROI:qk]</rows>
+        <cols>[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]</cols>
+      </table>
+      <simple-id uuid='{79D3BFC3-5A24-4543-9867-62BBEB29F48D}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ROI' name='federated.1wtdhn413svu76148iqza1ewofa6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wtdhn413svu76148iqza1ewofa6'>
+            <column caption='Source' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total]' derivation='Sum' name='[pcto:sum:Total:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[return_sum]' derivation='Sum' name='[pcto:sum:return_sum:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Return Sum' datatype='real' name='[return_sum]' role='measure' type='quantitative' />
+            <column-instance column='[return_sum]' derivation='Sum' name='[sum:return_sum:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:return_sum:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:Total:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:return_sum:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1wtdhn413svu76148iqza1ewofa6].[pcto:sum:Total:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F1:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Company Intranet - Partner&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Employee Referral&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Glassdoor&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Information Session&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Internet Search&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;On-line Web application&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Vendor Referral&quot;' />
+                <groupfilter function='member' level='[none:F1:nk]' member='&quot;Word of Mouth&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' direction='ASC' using='[federated.1wtdhn413svu76148iqza1ewofa6].[sum:return_sum:qk]' />
+          <slices>
+            <column>[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]</column>
+            <column>[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='448' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='color' field='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' value='#000000' />
+            <format attr='text-format' field='[federated.1wtdhn413svu76148iqza1ewofa6].[Multiple Values]' value='p0.00%' />
+            <format attr='color' field='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wtdhn413svu76148iqza1ewofa6].[Multiple Values]</rows>
+        <cols>[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{58FC8C17-08FB-4523-9BC7-1F2EEB6E792B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pay' name='federated.0xe856a1wdamhz1a82vv91lkenmb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xe856a1wdamhz1a82vv91lkenmb'>
+            <column-instance column='[racedesc]' derivation='None' name='[none:racedesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rel_pay]' derivation='None' name='[none:rel_pay:qk]' pivot='key' type='quantitative' />
+            <column caption='Racedesc' datatype='string' name='[racedesc]' role='dimension' type='nominal' />
+            <column caption='Rel Pay' datatype='real' name='[rel_pay]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='5' />
+            <format attr='stroke-color' id='refline0' value='#59a14f' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-size' id='refline1' value='4' />
+            <format attr='stroke-color' id='refline1' value='#e15759' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:rel_pay:qk]' enable-instant-analytics='true' formula='median' id='refline0' label-type='none' probability='95' scope='per-pane' value-column='[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:rel_pay:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:rel_pay:qk]' enable-instant-analytics='true' formula='median' id='refline1' label-type='none' probability='95' scope='per-cell' value-column='[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:rel_pay:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:racedesc:nk]</rows>
+        <cols>[federated.0xe856a1wdamhz1a82vv91lkenmb].[none:rel_pay:qk]</cols>
+      </table>
+      <simple-id uuid='{17ED1733-A8A2-435C-B539-B73830AF58AE}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Citizendesc' datatype='string' name='[citizendesc]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[citizendesc]' derivation='None' name='[none:citizendesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[racedesc]' derivation='None' name='[none:racedesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Racedesc' datatype='string' name='[racedesc]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04op8b514s5nki18tf9m30icb3sf].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <computed-sort column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:racedesc:nk]' direction='ASC' using='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]' />
+          <slices>
+            <column>[federated.04op8b514s5nki18tf9m30icb3sf].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:sum:Number of Records:qk:2]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:racedesc:nk]' value='159' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:sum:Number of Records:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:citizendesc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk] + [federated.04op8b514s5nki18tf9m30icb3sf].[pcto:sum:Number of Records:qk:2])</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:racedesc:nk]</cols>
+      </table>
+      <simple-id uuid='{AB66D127-41DD-415E-A268-2C2F658A1902}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters' />
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[employee_number]' derivation='Count' name='[cnt:employee_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Of Hire' datatype='date' name='[date_of_hire]' role='dimension' type='ordinal' />
+            <column caption='Date Of Termination' datatype='date' name='[date_of_termination]' role='dimension' type='ordinal' />
+            <column caption='Employee Number' datatype='real' name='[employee_number]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date_of_hire]' derivation='Month-Trunc' name='[tmn:date_of_hire:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date_of_termination]' derivation='Month-Trunc' name='[tmn:date_of_termination:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk]' included-values='in-range'>
+            <min>#2010-07-01 00:00:00#</min>
+            <max>#2016-06-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_hire:qk]' field-type='quantitative' fold='true' major-origin='#2011-04-16 00:00:00#' major-show='false' major-spacing='1.0' major-units='months' scope='cols' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_hire:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' palette='green_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[Parameters].[Parameter 1]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' value='Employees Hired'>
+              <formatted-text>
+                <run>Employees Hired</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' value='Employees Terminated'>
+              <formatted-text>
+                <run>Employees Terminated</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_hire:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]</rows>
+        <cols>([federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk] + [federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_hire:qk])</cols>
+        <show-full-range>
+          <column>[federated.04op8b514s5nki18tf9m30icb3sf].[date_of_hire]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{3B91F7C1-B65C-4BBD-AC45-F917D5DC7F71}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Employment Status' datatype='string' name='[employment_status]' role='dimension' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employment_status]' derivation='None' name='[none:employment_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[pcto:cnt:Number of Records:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:6]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:6]' scope='rows' value='% of Total Number of Employees' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]' value='193' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:6]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:department:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk] + [federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:6])</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]</cols>
+      </table>
+      <simple-id uuid='{A394A85B-F759-4BA0-B714-5BA2B70E73F1}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Employment Status' datatype='string' name='[employment_status]' role='dimension' type='nominal' />
+            <column-instance column='[employment_status]' derivation='None' name='[none:employment_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reason_for_term]' derivation='None' name='[none:reason_for_term:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[pcto:cnt:Number of Records:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column caption='Reason For Term' datatype='string' name='[reason_for_term]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04op8b514s5nki18tf9m30icb3sf].[Exclusions (Employment Status,Reason For Term)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:employment_status:nk]' />
+                <groupfilter function='level-members' level='[none:reason_for_term:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:reason_for_term:nk]' member='&quot;N/A - Has not started yet&quot;' />
+                    <groupfilter function='member' level='[none:employment_status:nk]' member='&quot;Future Start&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:reason_for_term:nk]' member='&quot;N/A - still employed&quot;' />
+                    <groupfilter function='union'>
+                      <groupfilter function='member' level='[none:employment_status:nk]' member='&quot;Active&quot;' />
+                      <groupfilter function='member' level='[none:employment_status:nk]' member='&quot;Leave of Absence&quot;' />
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:reason_for_term:nk]' member='&quot;Terminated for Cause&quot;' />
+                    <groupfilter function='member' level='[none:employment_status:nk]' member='&quot;Voluntarily Terminated&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:employment_status:nk]' />
+                  <hierarchy name='[none:reason_for_term:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:reason_for_term:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:reason_for_term:nk]' />
+              <groupfilter function='member' level='[none:reason_for_term:nk]' member='&quot;Voluntarily Terminated&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04op8b514s5nki18tf9m30icb3sf].[none:reason_for_term:nk]</column>
+            <column>[federated.04op8b514s5nki18tf9m30icb3sf].[Exclusions (Employment Status,Reason For Term)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]' />
+              <size column='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]' />
+              <text column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]' />
+              <text column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:reason_for_term:nk]' />
+              <text column='[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:reason_for_term:nk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Voluntarily Terminated&quot;</value>
+                <value>&quot;retiring&quot;</value>
+                <value>4</value>
+                <value>0.040404040404040407</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[none:reason_for_term:nk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]</field>
+                  <field>[federated.04op8b514s5nki18tf9m30icb3sf].[pcto:cnt:Number of Records:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Terminated for Cause&quot;</value>
+                <value>&quot;gross misconduct&quot;</value>
+                <value>1</value>
+                <value>0.010101010101010102</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{177F4F63-855C-4BB5-A4A2-F54FDF5B4609}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='3.68' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Count' name='[cnt:age:qk]' pivot='key' type='quantitative' />
+            <column caption='Maritaldesc' datatype='string' name='[maritaldesc]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[maritaldesc]' derivation='None' name='[none:maritaldesc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:Age (bin):qk]' scope='cols' value='Age' />
+            <format attr='title' class='0' field='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:age:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:maritaldesc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1267' />
+                <format attr='maxwidth' value='1267' />
+                <format attr='minheight' value='784' />
+                <format attr='maxheight' value='784' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:age:qk]</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.04op8b514s5nki18tf9m30icb3sf].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{40A25713-452F-4106-9DBB-973DFCA77094}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_core' name='federated.04op8b514s5nki18tf9m30icb3sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04op8b514s5nki18tf9m30icb3sf'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Citizendesc' datatype='string' name='[citizendesc]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Maritaldesc' datatype='string' name='[maritaldesc]' role='dimension' type='nominal' />
+            <column-instance column='[citizendesc]' derivation='None' name='[none:citizendesc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[maritaldesc]' derivation='None' name='[none:maritaldesc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:maritaldesc:nk]' direction='ASC' using='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.04op8b514s5nki18tf9m30icb3sf].[none:maritaldesc:nk]' value='185' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.04op8b514s5nki18tf9m30icb3sf].[none:citizendesc:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:Number of Records:qk]</rows>
+        <cols>[federated.04op8b514s5nki18tf9m30icb3sf].[none:maritaldesc:nk]</cols>
+      </table>
+      <simple-id uuid='{6FD71267-8FF0-4D42-8F66-47618FF8172B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='49200' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='33200' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 4' w='33200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='16000' x='34000' y='1000'>
+              <zone h='2750' id='8' name='Sheet 4' pane-specification-id='4' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:sex:nk]' type='color' w='16000' x='34000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98000' id='9' name='Sheet 2' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='23' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 4' w='33200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2750' id='8' name='Sheet 4' pane-specification-id='4' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:sex:nk]' type='color' w='16000' x='34000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Sheet 2' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8490DD11-1486-415D-8285-6361E45AD482}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6A7A6F3E-F95D-4726-9C79-F2E7876CCCD1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1wtdhn413svu76148iqza1ewofa6].[none:F1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5A37CAA-BE37-4EA5-927F-17EC76685C6A}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75984E58-AB30-435F-9DAA-E1CFA052D4BE}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:citizendesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC898171-CE71-4C4C-980A-2E8E3571D182}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96FF1299-7E39-4E9C-A87F-16477EE83838}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='205'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:employment_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{91886506-A606-4408-A814-1373BE2C02AA}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:maritaldesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FC438CFF-2441-42A5-89D3-2AC7C04254E7}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:citizendesc:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{507EBABD-DA63-47AE-9B71-376ABBDD3F2C}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:state:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39B080B6-C900-4A7F-9D65-B03AF14984BB}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17F3477F-44E1-4BF1-927F-999CD6059D31}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='285'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04op8b514s5nki18tf9m30icb3sf].[tmn:date_of_termination:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='6' param='[federated.04op8b514s5nki18tf9m30icb3sf].[sum:Number of Records:qk]' type='color' />
+            <card pane-specification-id='5' param='[federated.04op8b514s5nki18tf9m30icb3sf].[cnt:employee_number:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F99FEB9-B496-4BFC-A4A5-FE4C05C95905}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CB32CE1F-60B1-406F-ADFA-D84476BC83DB}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{970ADB8A-D27F-4334-9FB4-319905CEBAD0}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1wtdhn413svu76148iqza1ewofa6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8F0A605-EBD7-43DF-AEB3-3C9009CB4493}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04op8b514s5nki18tf9m30icb3sf].[none:department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D94ABDFC-B9D6-4458-AEF9-560C693DCC5E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC82BE2D-87B6-4596-98E2-969E0B92D654}' />
+    </window>
+  </windows>
+</workbook>
